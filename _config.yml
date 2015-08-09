@@ -1,0 +1,9 @@
+# Site settings
+title: Faarao.net
+description: > # this means to ignore newlines until "baseurl:"
+  Programming related thoughts and ramblings provided by me.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "https://blog.faarao.net" # the base hostname & protocol for your site
+
+# Build settings
+markdown: kramdown
