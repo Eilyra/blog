@@ -4,4 +4,4 @@ title: About
 permalink: /about/
 ---
 
-Status updates for Faarao.net services.
+Miscellaneous essays and tidbits of potential interest.
