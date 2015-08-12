@@ -8,3 +8,21 @@ url: "https://blog.faarao.net" # the base hostname & protocol for your site
 # Build settings
 markdown: kramdown
 highlighter: pygments
+
+# Misc
+timezone: Europe/Helsinki
+
+# Defaults
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  -
+    scope:
+      path: ""
+      type: "drafts"
+    values:
+      layout: "post"

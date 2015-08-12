@@ -1,5 +1,4 @@
 ---
-layout: post
 author: ellen
 ---
 Prata om WoW, hur catchup mekaniken skulle kunna knytas ihop me account-wide achin, så att de vore mindre frustrerande och komma tillbaka o sen farma direkt till nyaste content. Skulle också hålla content aktuellt längre tider!
