@@ -116,11 +116,7 @@ div.wrapper {
 
   a.site-title, a.page-link {
     color: #131313;
-    text-decoration: none;
     font-weight: 200;
-    &:hover {
-      text-decoration: underline;
-    }
   }
 
   .site-title {
@@ -132,6 +128,11 @@ div.wrapper {
       margin-left: 20px;
     }
   }
+}
+
+.page-heading {
+  font-size: 1.5em;
+  margin: 0.5em 0;
 }
 
 .post-header {
