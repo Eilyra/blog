@@ -1,5 +1,4 @@
 ---
-layout: post
 ---
 Ignore me, dev/testing post!
 

@@ -1,5 +1,4 @@
 ---
-layout: post
 author: ellen
 title: Checking a file's hash in PowerShell
 ---
