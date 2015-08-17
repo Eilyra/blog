@@ -13,7 +13,7 @@ Example usage:
 Get-FileHash document.txt
 
 # Should print true if the file hashes are equal
-(Get-FileHash document.txt) -eq "4d4b9e7e923c087cc8a7ebe9d1f7674b5b1a802850aa0d5b0f0c39fc9fed439e"
+(Get-FileHash document.txt).Hash -eq "4d4b9e7e923c087cc8a7ebe9d1f7674b5b1a802850aa0d5b0f0c39fc9fed439e"
 
 # Using a different hash algorithm
 Get-FileHash document.txt -Algorithm SHA1
