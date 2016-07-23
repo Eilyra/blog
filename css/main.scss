@@ -90,9 +90,9 @@ hr {
 }
 
 div.wrapper {
-  margin: 0 auto;
+  margin: 0 0.5em;
   width: auto;
-  @media (min-width: $br-sm) { width: 750px; }
+  @media (min-width: $br-sm) { width: 750px; margin: 0 auto; }
   @media (min-width: $br-me) { width: 970px; }
   @media (min-width: $br-lg) { width: 1170px; }
 }
