@@ -78,7 +78,7 @@ ul {
       margin-top: 15px;
       .post-meta {
         font-size: 0.9em;
-        color: #9f9f9f;
+        color: #999;
       }
       .post-link {}
     }
@@ -107,11 +107,6 @@ div.wrapper {
     vertical-align: center;
     .menu-icon {
       display: none;
-      @media (max-width: $br-sm) { display: inline-block; }
-      > svg {
-        width: 16px;
-        height: 16px;
-      }
     }
     .trigger {
       overflow: none;
