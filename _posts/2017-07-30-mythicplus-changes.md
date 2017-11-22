@@ -1,6 +1,7 @@
 ---
 author: ellen
 title: Mythic+ changes
+category: World of Warcraft
 ---
 
 Blizzard recently made some pretty big changes to how mythic+ works, both in the way of loot and how the keys themselves handle. The big points being:

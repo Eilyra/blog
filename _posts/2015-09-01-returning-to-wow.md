@@ -1,9 +1,7 @@
 ---
 author: ellen
 title: Returning to World of Warcraft
-# Prata om WoW, hur catchup mekaniken skulle kunna knytas ihop me account-wide achin, så att de vore mindre frustrerande och komma tillbaka o sen farma direkt till nyaste content. Skulle också hålla content aktuellt längre tider!
-
-# Ett (potentiellt) minus är ju att de finns olika svårighetsgrader, så hur knyta in achin/ilvl så att motivationen ändå hålls och göra progressen "på riktigt" o int via Raid Finder?
+category: World of Warcraft
 ---
 So, I ended up playing World of Warcraft again after taking a break (again) about a month or two into the current expansion (Warlords of Draenor). I had decided to take the break because I didn't have anything to do that interested me at the time and ended up returning because I got the inspiration to start leveling some more classes to see if I could find something that I could see myself playing a bit more.
 

@@ -1,6 +1,7 @@
 ---
 author: ellen
 title: Wild Growth
+category: World of Warcraft
 ---
 I started leveling a Druid, and so far it's been progressing quite well. I've managed to get all the way to 64, been doing dungeoning since I hit 15 and unlocked the dungeon finder. It's been a blast so far, somehow managing to capture quite a lot of what I used to like about healing, though I've been able to completly ignore mana management as mana seems to be rather limitless at lower levels. I'm starting to notice at least some lowering of my current mana in certain pulls now though!
 

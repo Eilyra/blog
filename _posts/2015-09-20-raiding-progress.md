@@ -1,6 +1,7 @@
 ---
 author: ellen
 title: Raiding progress (or lack thereof)
+category: World of Warcraft
 ---
 There's been little progress since my [last update]({% post_url 2015-09-16-levelled %}). No further raids have happened so far, though there is one scheduled for tonight though only with two people signed up. I've made decent progress on the Talon Queen title, needing only ~3000 more reputation & I'll be getting around 2000 from tomorrow's Heroic Skyreach. As the dungeon event is ending, I'll probably end up grinding the rest of the reputation out in the world as I haven't bothered putting together a group for the Mythic variant of Skyreach yet and probably won't end up doing that before the event is over.
 

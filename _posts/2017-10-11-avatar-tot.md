@@ -1,6 +1,7 @@
 ---
 author: ellen
 title: The Avatar has Fallen
+category: World of Warcraft
 ---
 
 On Monday we finally managed to down Avatar after surprisingly few tries. Believe I personally have around 230, which seems to be quite on the low end for that boss. In the end as noted, the boss is quite simple. Sure the DPS and HPS requirements are somewhat tough, and phase one as a healer especially. But in the end, somewhat like Maiden, the kill ended up coming as a surprise. We went down into phase two around 32% and just decided to play it to see how it goes. A few minutes later, the boss was down. It was all surprisingly clean and boring almost. Maybe a place or two where it looked somewhat dangerous.

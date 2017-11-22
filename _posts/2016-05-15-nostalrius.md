@@ -1,6 +1,7 @@
 ---
 author: ellen
 title: RIP Nostalrius
+category: World of Warcraft
 ---
 So quite a bit has happened since my last post, most notably the closing of Nostalrius where I had played. Admittedly, I did not end up playing much more since my last post, primarily due to the concern of something like closing down happening. And while Nostalrius was well managed I do still have a preference to play on the official servers even though the game in some aspects feels inferior.
 

@@ -1,6 +1,7 @@
 ---
 author: ellen
 title: Blackrock Foundry happened
+category: World of Warcraft
 ---
 Yesterday, some raiding did actually manage to happen, kind of. A Blackrock Foundry normal run was started, sadly only five people from the guild showed up. This time however, the raid leader decided to PUG the rest of the group so it wouldn't be a completely wasted effort and we (well, I) did get to experience the raid! Well, as said, kind of. While I stayed for the whole raid and we did clear all of it, at the end it was only me with one other guild member. So it ended up being mostly a PUG raid. Which, while they were fine folk & made the run go smooth, isn't quite the same experience as progressing through an instance with a guild. Admittedly, there isn't much progressing to be had in BRF considering even yesterday most if not all of the raid overgeared the instance. I did manage to pick up a couple of marginal upgrades however, so that was nice.
 

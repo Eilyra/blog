@@ -1,6 +1,7 @@
 ---
 author: ellen
 title: Fallen Avatar
+category: World of Warcraft
 ---
 
 So we've gotten a lot more progress made on Avatar thanks to extending the raid lock. Honestly I'm not quite sure if it was the right move but I do want to kill Kil'jaeden before Antorus comes out so in that sense I suppose it could be helpful. And in theory at least, we should have the gear to be able to kill both bosses so it should be fine from that perspective. Leaving out the farm bosses does feel sligthly bad though, especiall considering we have only killed Maiden once. Feels like an odd compromise.
