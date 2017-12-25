@@ -1,0 +1,152 @@
+---
+---
+@charset "utf-8";
+// @import "syntax-highlighting";
+
+$br-sm: 768px;
+$br-me: 1000px;
+$br-lg: 1400px;
+
+body, h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, hr,
+dl, dd, ol, ul, figure {
+    margin: 0;
+    padding: 0;
+}
+
+
+h1, h2, h3, h4, h5, h6,
+p, blockquote, pre,
+ul, ol, dl, figure,
+%vertical-rhythm {
+  margin-bottom: 0.5em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 200;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+h3 {
+  font-size: 1.2em;
+}
+
+body {
+  font-family: 'Helvetica Neue', 'Segoe UI', 'Segoe WP', Helvetica, Roboto, sans-serif;
+  font-size: 16px;
+  color: #333333;
+  background-color: #fdfdfd;
+  line-height: 1.5;
+}
+
+a {
+  color: rgb(42, 122, 226);
+  text-decoration: none;
+  &:visited {
+    color: rgb(23, 86, 169);
+  }
+  &:hover {
+    color: #333333;
+    text-decoration: underline;
+  }
+}
+
+p {
+  margin-bottom: 1em;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+blockquote {
+  border-left: solid 5px #e0e0e0;
+  padding-left: 10px;
+}
+
+ul {
+  &.post-list {
+    list-style-type: none;
+    li {
+      margin-bottom: 15px;
+      margin-top: 15px;
+      .post-meta {
+        font-size: 0.9em;
+        color: #999;
+      }
+      .post-link {}
+    }
+  }
+}
+
+hr {
+  margin: 1em 0;
+}
+
+div.wrapper {
+  margin: 0 0.5em;
+  width: auto;
+  @media (min-width: $br-sm) { width: 750px; margin: 0 auto; }
+  @media (min-width: $br-me) { width: 970px; }
+  @media (min-width: $br-lg) { width: 1170px; }
+}
+
+.site-header {
+  min-height: 56px;
+  line-height: 56px;
+  position: relative;
+  border-bottom: 1px #e0e0e0 solid;
+  .site-nav {
+    float: right;
+    vertical-align: center;
+    .menu-icon {
+      display: none;
+    }
+    .trigger {
+      overflow: none;
+    }
+  }
+
+  a.site-title, a.page-link {
+    color: #131313;
+    font-weight: 200;
+  }
+
+  .site-title {
+    font-size: 1.5em;
+  }
+
+  .page-link {
+    &:not(:first-child) {
+      margin-left: 20px;
+    }
+  }
+}
+
+.page-heading {
+  font-size: 1.5em;
+  margin: 0.5em 0;
+}
+
+.post-header {
+  margin-bottom: 1em;
+  .post-meta {
+    color: #9f9f9f;
+  }
+}
+
+.post-content {
+  ul {
+    margin-left: 2em;
+  }
+}
+
+.site-footer {
+  min-height: 56px;
+}

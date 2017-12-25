@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <title>{{ .Title }}</title>
+        {{ if .Page.Summary }}<meta name="description" content="{{ .Page.Summary }}">{{ end }}
+        
+        <link rel="stylesheet" href="{{ "/css/main.css" | absURL }}">
+        <link rel="canonical" href="{{ .Page.URL | absURL }}">
+        {{ if .RSSLink}}
+        <link rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" href="{{ .RSSLink }}" />
+        <link rel="feed" type="application/rss+xml" title="{{ .Site.Title }}" href="{{ .RSSLink }}" />
+        {{ end }}
+    </head>
+      
+
+  <body>
+
+    <header class="site-header">
+
+        <div class="wrapper">
+      
+          <a class="site-title" href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
+      
+        </div>
+      
+      </header>
+
+    <div class="wrapper">
+      {{ block "main" . }}{{ end }}
+    </div>
+
+    <footer class="site-footer">
+
+    </footer>
+    
+
+  </body>
+
+</html>

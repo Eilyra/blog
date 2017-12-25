@@ -1,0 +1,8 @@
+baseURL: https://blog.faarao.net
+disablePathToLower: true
+languageCode: en-us
+title: Faarao.net
+authors:
+  ellen:
+    name: Ellen Rönnholm
+    twitter: eilyra
