@@ -1,1 +1,2 @@
 /rss.xml /index.xml
+/:year/:month/:date/:post.html /:year/:month/:date/:post/
