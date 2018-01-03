@@ -1,7 +1,7 @@
 baseURL: https://blog.faarao.net
 disablePathToLower: true
-languageCode: en-us
-title: Faarao.net
+languageCode: en-gb
+title: The Rambling Priest
 authors:
   ellen:
     name: Ellen Rönnholm
