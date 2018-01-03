@@ -8,4 +8,4 @@ authors:
     twitter: eilyra
 
 permalinks:
-  post: /:year/:month/:slug/
+  post: /:year/:month/:day/:slug/
