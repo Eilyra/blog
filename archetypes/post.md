@@ -2,7 +2,7 @@
 categories:
     - World of Warcraft
 author: 
-title: ""
+title:
 slug: 
 date: {{ .Date }}
 ---
