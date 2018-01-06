@@ -1,1 +1,3 @@
 public
+*.map
+.sass-cache
