@@ -97,7 +97,7 @@ div.wrapper {
   min-height: 56px;
   line-height: 56px;
   position: relative;
-  border-bottom: 1px #e0e0e0 solid;
+  background-color: #333333;
   .site-nav {
     float: right;
     vertical-align: center;
@@ -110,7 +110,7 @@ div.wrapper {
   }
 
   a.site-title, a.page-link {
-    color: #131313;
+    color: #fdfdfd;
     font-weight: 200;
   }
 
@@ -132,6 +132,9 @@ div.wrapper {
 
 .post-header {
   margin-bottom: 1em;
+  a.post-link {
+    color: #333333;
+  }
   .post-meta {
     color: #9f9f9f;
   }
