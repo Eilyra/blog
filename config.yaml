@@ -9,3 +9,7 @@ authors:
 
 permalinks:
   post: /:year/:month/:day/:slug/
+
+blackfriday:
+  extension:
+    - footnotes
