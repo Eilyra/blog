@@ -1,0 +1,4 @@
+This is a Brave Payments publisher verification file.
+
+Domain: faarao.net
+Token: 4c38776025607208512d6d8b0988a18636e3cc819b5df0093154064355fce765
