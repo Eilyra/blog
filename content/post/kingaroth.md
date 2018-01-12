@@ -4,9 +4,9 @@ categories:
 author: ellen
 title: Kin'garoth
 slug: kingaroth
-date: 2018-01-12T19:56:53+02:00
-draft: true
+date: 2018-01-12T23:37:44+02:00
 ---
+
 With Imonar down last reset and getting through the reclear this week we managed to get a few tries in on Kin'garoth. So far the fight seems rather trivial, with an element of being a movement check. So the fight for the most part remains as is from heroic; with orbs to dodge, adds to kill, a beam to dodge and not standing in the tanks to avoid being one-shot by the tank mechanic.
 
 There is one thing that changes however, after killing the first set of adds, the orbs apply a debuff that increases the damage taken from them. As the orbs will start spawning faster than one can clear them, this will lead to there being an increasing amount of orbs going around the circle which will make moving to the adds and spreading out for their abilities harder. I believe this may end up being our biggest challenge, as movement seems to be a big problem in the guild---Imonar intermissions being the perfect example from earlier. Though I suppose this kind of soft enrage is the primary difficulty in the fight along with the damage requirements it imposes.
