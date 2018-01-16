@@ -3,7 +3,6 @@ categories:
     - World of Warcraft
 author: ellen
 title: Decisions, decisions
-slug: entscheidungen
 date: 2018-01-05T03:09:24+02:00
 ---
 

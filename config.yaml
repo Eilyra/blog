@@ -8,7 +8,7 @@ authors:
     twitter: eilyra
 
 permalinks:
-  post: /:year/:month/:day/:slug/
+  post: /:year/:month/:day/:filename/
 
 blackfriday:
   extension:

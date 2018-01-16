@@ -3,7 +3,6 @@ categories:
     - World of Warcraft
 author: ellen
 title: Kin'garoth
-slug: kingaroth
 date: 2018-01-12T23:37:44+02:00
 ---
 

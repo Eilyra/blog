@@ -3,7 +3,6 @@ categories:
     - World of Warcraft
 author: ellen
 title: Imonar down, decisions still undecided
-slug: imonar-tot
 date: 2018-01-08T03:52:16+02:00
 ---
 
