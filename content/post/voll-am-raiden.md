@@ -3,9 +3,9 @@ categories:
     - World of Warcraft
 author: ellen
 title: Listening to the sounds of progress
-date: 2018-02-05T19:40:03+02:00
-draft: true
+date: 2018-02-08T02:40:56+02:00
 ---
+
 The first week of raiding with the new guild has come and gone, though there wasn't all that much raiding in it for me. I participated in the farm up to and including Kin'garoth, meaning one new official kill for me. After that however, I got to sit out. Not necessarily surprising since they would have been new bosses for me and presumably they wanted to finish the farm quickly in order to get back to progressing on Argus---but nonetheless slightly disappointing. In good news they seemed to like my play so the decision wasn't motivated by bad performance. I was out for the rest of the week as well which was to be expected with Argus progress going on and us running only three healers. Which meant that for the rest of the reset I was mostly following the progress through either streams, Teamspeak or both. And now it seems that will continue for this reset since we have extended the ID. I'm hoping they kill the boss soon since it sounds like some people in the raid are getting very frustrated with the progress.
 
 In other news I suppose, slowly getting back into doing some mythic+ with one guildie, so far no more of a steady group than that and not many intersting keys but it has been fun. I think I might just end up reorienting my expectations regarding mythic+ since lately I'm feeling my desire to play higher keys is preventing me from actually enjoying the keys I am doing as much as I should. This I think goes for raiding as well, I've taken on an undue amount of stress from a desire to perform and participate that has led to great frustration with not being able to and that is frankly unecessary. So I'll keep working towards my goals but try to readjust my attitude regarding the present since I think I've done the old mistake of comparing myself to others to much and becoming disappointed with what I have even though it is pretty great and when I am doing stuff I'm enjoying it greatly. So now just to look forward to some more mythic+ hopefully in the near future again and enjoy the sounds of raiding if not the experience of raiding.
