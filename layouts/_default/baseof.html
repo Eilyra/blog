@@ -33,10 +33,14 @@
     <div class="wrapper">
       {{ block "main" . }}{{ end }}
     </div>
-
+    {{ if $.Site.Params.about }}
     <footer class="site-footer">
-
+      <div class="wrapper">
+        <h1>About</h1>
+        <p>{{ $.Site.Params.about }}</p>
+      </div>
     </footer>
+    {{ end }}
     
 
   </body>

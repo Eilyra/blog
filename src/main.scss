@@ -42,6 +42,12 @@ body {
   color: #333333;
   background-color: #fdfdfd;
   line-height: 1.5;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  > .wrapper {
+    flex: 1;
+  }
 }
 
 a {
@@ -148,4 +154,8 @@ div.wrapper {
 
 .site-footer {
   min-height: 56px;
+  margin-top: 1em;
+  background: #333333;
+  color: #fdfdfd;
+  padding: 1em 0;
 }
