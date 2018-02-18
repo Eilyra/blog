@@ -16,3 +16,6 @@ blackfriday:
 
 params:
   about: "Sometimes I decide I want to write something, those things end up here. Mostly focused on my adventures in World of Warcraft at the moment."
+
+taxonomies:
+  category: "categories"

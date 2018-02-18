@@ -8,7 +8,7 @@
             <h2>
               <a class="post-link" href="{{ .Permalink }}">{{ .Title }}</a>
             </h2>
-            <p class="post-meta">{{ .Date.Format "Jan 2, 2006" }}</p>
+            <p class="post-meta">{{ .Date.Format "Jan 2, 2006" }}{{ if .Params.categories }} &#x25CF; {{ range .Params.categories }}{{ . }}{{ end }}{{ end }}</p>
           </div>
           <article class="post-content">{{ .Summary }}{{ if .Truncated }} <a class="post-link" href="{{ .Permalink }}">Read more...</a>{{ end }}</article>
         </li>
