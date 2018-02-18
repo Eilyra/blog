@@ -6,7 +6,7 @@ title: Decisions, decisions
 date: 2018-01-05T03:09:24+02:00
 ---
 
-I posted about [me looking for a guild a while back]({{< relref "post/2017-11-23-gildensuche.md" >}}), and while I *technically* found a guild it did not quite meet the goals I had set out when looking for a guild with regards to the level of progress. Now, we've been at it for a few resets and the progress is somewhere between expected and slightly disappointing (I had been hoping we'd manage to kill Imonar today for example, sadly wasn't even close. Though there was definite progress). Which all would speak for sending out more applications.
+I posted about [me looking for a guild a while back]({{< relref "post/2017/gildensuche.md" >}}), and while I *technically* found a guild it did not quite meet the goals I had set out when looking for a guild with regards to the level of progress. Now, we've been at it for a few resets and the progress is somewhere between expected and slightly disappointing (I had been hoping we'd manage to kill Imonar today for example, sadly wasn't even close. Though there was definite progress). Which all would speak for sending out more applications.
 
 At the same time, I've taken something of a liking to the guild I'm in. That combined with most actually interesting prospects requiring a realm and faction change which comes at a somewhat big cost, makes me reconsider.
 
