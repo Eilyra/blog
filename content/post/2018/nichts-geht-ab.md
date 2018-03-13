@@ -3,9 +3,9 @@ categories:
     - Gaming
 author: ellen
 title: Quiet
-date: 2018-03-13T17:09:07+02:00
-draft: true
+date: 2018-03-13T17:56:56+02:00
 ---
+
 Sometimes there are quiet times, like the past week. Not much has really been going on apart from the usual raids and some mythic+. And while that has been slightly disappointing at times---mostly because I keep wanting to do more mythic+ and do better there---it's actually gone as one should have expected. The affixes aren't exactly conducive to doing higher keys, especially within the constraints of our setup since we don't really have any classes that excel at dealing with orbs.
 
 In good news however, some of the disappointment has also come from increased interest and consequently participation of a few guildies in the runs. They have indicated a more regular interest in doing higher keys, which would allow for a team that plays better together instead of the constant reliance on random people that are hard to evaluate before the run begins. Now I did mention disappointment, and that has partially come from some level of inexperience showed by them at times, but inexperience is quite simply fixed by experience so that will come with time. Setup wise, I actually think we should be decently off for most affixes even if it is very unconventional. Though Hyrja might pose some problems, but when doesn't she?
