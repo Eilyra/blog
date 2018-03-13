@@ -102,7 +102,7 @@ div.wrapper {
   .post-header .post-meta {
     color: #9f9f9f; }
 
-.post-content ul {
+article.post ul, article.post ol {
   margin-left: 2em; }
 
 .site-footer {
