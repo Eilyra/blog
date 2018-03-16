@@ -3,18 +3,20 @@ categories:
     - Gaming
 author: ellen
 title: Magicka
-date: 2018-03-16T15:08:42+02:00
-draft: true
+date: 2018-03-16T16:27:56+02:00
 ---
+
 As [mentioned]({{<relref "post/2018/nichts-geht-ab.md">}}) I've been playing some Magicka recently and we finished the main campaign and one of the DLC campaigns: The Stars are Left.
 
-Now it has been a really fun time and I'll have to look into getting some of the other DLC campaigns, I believe there are still two or three to play along with Magicka 2 it seems, I wasn't even aware that there was a second installment of the game out.
+Now it has been a really fun time and I'll have to look into getting some of the other DLC campaigns, I believe there are still two or three to play along with Magicka 2 it seems, I wasn't even aware that there was a second installment of the game out so now I'm looking forward to getting the chance to play that and see what it's all about and what they've changed.
+
+It has also been really fun to be playing in coop this time around, as I have had a few bashes at the Stars are Left DLC alone but those had ended mostly in frustration since I was so unused to playing the game again as my original playthrough was around the time the game came out I think, which is around 7 years ago now.
 
 ## But what is Magicka?
 
 Magicka---as the name might imply---is a spellcasting game where you play as a mage with eight base elements at your disposal, these being: Water, Life, Shield, Frost, Lightning, Arcane, Earth and Fire. You can activate one of these elements by pressing a hotkey and combine up to five of them and either throw them at the enemy---or yourself---as is or if the combination is a magick you know then you can cast that, usually casting the magick is the right move as they tend to be more powerfull but sometimes just throwing a big rock at the enemy is more effective. You also can't use all magicks everywhere, for example you can't conjure a lightning bolt indoors which limits its usability somewhat.
 
-Some of the base elements also combine into other elements, water and frost combining into ice and fire and water combining into steam.
+Some of the base elements also combine into other elements, water and frost combining into ice and fire and water combining into steam for example.
 
 This basic system is really the beauty of the game, since there are so many combinations you can do and you're encouraged to use many of them since enemies have different weaknesses. This is especially apparent later on in the game where actually using the wrong element against some enemies will heal them instead of damage them---the obvious example being undead being healed by arcane and damaged by life, which does make undead somewhat easy to deal with in this game.
 
@@ -29,3 +31,7 @@ Right, mines. As in the explody type, not the [diggy type](https://www.youtube.c
 ## Should I play Magicka?
 
 If you like either hard games (single player) or very fun coop games (multiplayer) and spellcasting, then yes. Magicka is just simply a fun game that doesn't take itself too seriously and just allows you to have tons of fun with spellcasting. It can be frustratingly hard at times but coop with its revives alleviates that a lot and the silly teamkills that can happen are consequently more funny than frustrating---as long as one isn't playing with a griefer, but I suppose that wouldn't be fun in any game.
+
+Magicka even seems to be -70% at the moment on [Steam](http://store.steampowered.com/app/42910/Magicka/) until the end of the week, so I suppose it would be a decent time to buy as well. It seems to be slightly cheaper on the [Paradox website](https://www.paradoxplaza.com/magicka/MAMA01GSK-MASTER.html) if one wants to buy the game along with all the DLC though, so that might be worth checking out as well.
+
+Oh, there are also actually arena PVP and challenge modes in the game, but I've focused on the campaign/adventure mode since that's what interests me and what I've played and is probably where one should start with the game anyway.
