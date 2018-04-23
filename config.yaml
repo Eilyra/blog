@@ -19,3 +19,4 @@ params:
 
 taxonomies:
   category: "categories"
+  series: "series"
