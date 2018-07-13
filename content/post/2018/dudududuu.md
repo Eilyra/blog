@@ -3,8 +3,7 @@ categories:
     - World of Warcraft
 author: ellen
 title: Pre-patch, druids and guilds
-date: 2018-07-13T19:34:11+03:00
-draft: true
+date: 2018-07-13T20:23:48+03:00
 ---
 There's actually a surprising amount going on lately, much of which I haven't written here about. To be fair some of that stuff is fairly recent, like the [recent confirmation that the pre-patch is coming next week](https://worldofwarcraft.com/en-gb/news/21952591#1) which is something of a big incoming change that I feel didn't have a lot of official notice. I mean, it's already Friday as we learned, which means that the patch is coming in less than a week. That feels like really short notice for something that so significantly changes the game. To be fair, it was somewhat foreshadowed [with them saying the PVP season will end soon](https://worldofwarcraft.com/en-gb/news/21931802) and with it being four weeks before the expansion launch, it can't end up being much later.<!--more-->
 
