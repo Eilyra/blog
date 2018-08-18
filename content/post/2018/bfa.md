@@ -3,8 +3,7 @@ categories:
     - World of Warcraft
 author: ellen
 title: Battle for Azeroth
-date: 2018-08-17T02:42:04+03:00
-draft: true
+date: 2018-08-19T00:18:21+03:00
 ---
 So Battle for Azeroth was released a few days ago and so far it has been something of a blast, it has been really enjoyable to have something to do again in the game after the quiet times at the end of Legion where I was almost only logging in to do raids with the occasional mythic+ sprinkled in.
 
