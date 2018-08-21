@@ -96,7 +96,8 @@ div.wrapper {
   margin: 0.5em 0; }
 
 .post-header {
-  margin-bottom: 1em; }
+  margin: 2em 0;
+  text-align: center; }
   .post-header a.post-link {
     color: #333333; }
   .post-header .post-meta {
@@ -111,5 +112,3 @@ article.post ul, article.post ol {
   background: #333333;
   color: #fdfdfd;
   padding: 1em 0; }
-
-/*# sourceMappingURL=main.css.map */
