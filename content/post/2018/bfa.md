@@ -7,7 +7,7 @@ date: 2018-08-19T00:18:21+03:00
 ---
 So Battle for Azeroth was released a few days ago and so far it has been something of a blast, it has been really enjoyable to have something to do again in the game after the quiet times at the end of Legion where I was almost only logging in to do raids with the occasional mythic+ sprinkled in.
 
-The start went by rather quickly, we managed to get to 120 directly on Tuesday and still have enough energy after a small sleep break to clear all of the available dungeons on heroic---that left out two dungeons, Siege of Boralus which was locked behind reputation and Kings' Rest which is only available on mythic. It was really interesting to see the dungeons for the first time since I hadn't really spent much time on the beta at all though they were for the most part a bit easy, which I guess is to be expected from heroic dungeons.
+The start went by rather quickly, we managed to get to 120 directly on Tuesday and still have enough energy after a small sleep break to clear all of the available dungeons on heroic---that left out two dungeons, Siege of Boralus which was locked behind reputation and Kings' Rest which is only available on mythic. It was really interesting to see the dungeons for the first time since I hadn't really spent much time on the beta at all though they were for the most part a bit easy, which I guess is to be expected from heroic dungeons.<!--more-->
 
 There were a couple of notable exceptions though, primarly Shrine of the Storm and Temple of Sethraliss[^1]. The end boss in Temple even prompted a respec from Discipline to Holy for me, since I couldn't quite figure out on the spot how to manage the single target healing requirement of that boss without any mobs present.
 
