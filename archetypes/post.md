@@ -1,7 +1,7 @@
 ---
 categories:
     - World of Warcraft
-author: 
+author: ellen
 title: 
 date: {{ .Date }}
 draft: true
