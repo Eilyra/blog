@@ -15,7 +15,7 @@ blackfriday:
     - footnotes
 
 params:
-  about: "Sometimes I decide I want to write something, those things end up here. Mostly focused on my adventures in World of Warcraft at the moment, along with some other games during the end of expansion lull."
+  about: "Sometimes I decide I want to write something, those things end up here. Mostly focused on my adventures in World of Warcraft."
 
 taxonomies:
   category: "categories"
