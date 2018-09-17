@@ -5,9 +5,9 @@ author: ellen
 title: Holy
 date: 2018-09-17T16:23:23+03:00
 ---
-I have been [playing mostly Discipline since the pre-patch]({{< relref "post/2018/prepatch.md" >}}) and it has been really nice if a bit new. Not as new as one might think, since I really liked spamming Smite as Holy as well, but it does take some different thinking to play Discipline, especially when preparing cooldowns.<!--more-->
+I have been [playing mostly Discipline since the pre-patch]({{< relref "post/2018/prepatch.md" >}}) and it has been really nice if a bit new. Not as new as one might think, since I really liked spamming Smite as Holy as well, but it does take some different thinking to play Discipline, especially when preparing cooldowns.
 
-However, now I have had a couple of opportunities where it simply made more sense to play Holy which one would think is great since I loved the spec in Legion---so much so, that I basically didn't play Discipline at all in Legion even to my detriment at times since it was such a strong spec---unfortunately, Holy just doesn't play very fun at the moment.
+However, now I have had a couple of opportunities where it simply made more sense to play Holy which one would think is great since I loved the spec in Legion---so much so, that I basically didn't play Discipline at all in Legion even to my detriment at times since it was such a strong spec---unfortunately, Holy just doesn't play very fun at the moment.<!--more-->
 
 ## Legendaries
 
