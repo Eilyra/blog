@@ -38,7 +38,7 @@ h3 {
 
 body {
   font-family: 'Helvetica Neue', 'Segoe UI', 'Segoe WP', Helvetica, Roboto, sans-serif;
-  font-size: 16px;
+  font-size: 22px;
   color: #333333;
   background-color: #fdfdfd;
   line-height: 1.5;
@@ -95,7 +95,7 @@ hr {
 div.wrapper {
   margin: 0 0.5em;
   width: auto;
-  @media (min-width: 48em) { width: 46em; margin: 0 auto; }
+  @media (min-width: 36em) { width: 34em; margin: 0 auto; }
 }
 
 .site-header {
