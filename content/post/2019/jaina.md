@@ -4,7 +4,6 @@ categories:
 author: ellen
 title: Jaina
 date: 2019-03-28T16:33:55+02:00
-draft: true
 ---
 So we finally have Jaina down---[a while ago actually](https://twitter.com/eilyra/status/1105934047723819010)---and it was quite the adventure. I believe we ended up with around 360 wipes, a bit more and two complete resets of progressing (three, if you count the one day of the reset we "killed" her).
 
