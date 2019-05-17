@@ -2,19 +2,19 @@
 {{ $paginator := .Paginate (where .Data.Pages "Type" "post") }}
 <div class="home">
 
-    <ul class="post-list">
+    <div class="post-list">
       {{ range $paginator.Pages }}
-        <li class="post">
-          <div class="post-header">
+        <article class="post">
+          <header class="post-header">
             <h2>
               <a class="post-link" href="{{ .Permalink }}">{{ .Title }}</a>
             </h2>
             <p class="post-meta">{{ .Date.Format "Jan 2, 2006" }}{{ if .Params.categories }} &#x25CF; {{ delimit .Params.categories ", "}}{{ end }}</p>
-          </div>
-          <article class="post-content">{{ .Summary }}{{ if .Truncated }} <a class="post-link" href="{{ .Permalink }}">Read more...</a>{{ end }}</article>
-        </li>
+          </header>
+          <section class="post-content">{{ .Summary }}{{ if .Truncated }} <a class="post-link" href="{{ .Permalink }}">Read more...</a>{{ end }}</section>
+        </article>
       {{ end }}
-    </ul>
+      </div>
     <div class="pagination">
       {{ if $paginator.HasPrev }}
         <a href="{{ $paginator.Prev.URL }}" class="previous">Previous</a>
