@@ -4,7 +4,6 @@ categories:
 author: ellen
 title: Crucible of Storms
 date: 2019-05-17T19:56:22+03:00
-draft: true
 ---
 So the new raid has been out for a while new and we've been poking at it for almost all of our raid time since it came out with the exception of one half-clear of Dazar'alor. So far we have managed to kill the first of two bosses and happily actually killed the boss before significant nerfs. Unfortunately [those nerfs](https://worldofwarcraft.com/en-gb/news/22933417/hotfixes-14-mai-2019) also came to the second boss so won't be able to say the same thing there. Still, the nerfs seem quite justified considering the silly setups we've seen for some of those early kills.
 
