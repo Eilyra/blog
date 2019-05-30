@@ -4,7 +4,6 @@ categories:
 author: ellen
 title: Redesign
 date: 2019-05-30T03:20:11+03:00
-draft: true
 ---
 So while I was watching [a stream today](https://www.twitch.tv/onkelbarlow) and following the discussion on the Classic beta I remembered something: Blizzard used to provide fansite kits to the community in case you wanted to make a fansite for World of Warcraft. This lead to me wondering if they still do that and unfortunately I could find no sign of these kits on the official website, however I did find a couple of the old kits---namely the original one I had played around with and one for Wrath of the Lich King---from a [third party fansite](https://wow.4fansites.de/downloadsfansitekit.php) amusingly enough.
 
