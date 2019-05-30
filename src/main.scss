@@ -130,16 +130,25 @@ body > div {
       background-repeat: repeat-y, repeat-y, repeat;
       background-position: left, right, left;
       padding: 0 29px;
+      .site-header {
+        background-position: bottom, center top -137px;
+      }
     }
   }
   @media screen and (min-width: 1000px) {
     & {
       width: 900px;
+      .site-header {
+        background-position: bottom, center top -229px;
+      }
     }
   }
   @media screen and (min-width: 1400px) {
     & {
       width: 1200px;
+      .site-header {
+        background-position: bottom, center top -370px;
+      }
     }
   }
 }

@@ -94,13 +94,19 @@ body > div {
       background-image: url(../images/border_left.gif), url(../images/border_right.gif), url(../images/parchment-light2.jpg);
       background-repeat: repeat-y, repeat-y, repeat;
       background-position: left, right, left;
-      padding: 0 29px; } }
+      padding: 0 29px; }
+      body > div .site-header {
+        background-position: bottom, center top -137px; } }
   @media screen and (min-width: 1000px) {
     body > div {
-      width: 900px; } }
+      width: 900px; }
+      body > div .site-header {
+        background-position: bottom, center top -229px; } }
   @media screen and (min-width: 1400px) {
     body > div {
-      width: 1200px; } }
+      width: 1200px; }
+      body > div .site-header {
+        background-position: bottom, center top -370px; } }
 
 a {
   color: #276ecc;
