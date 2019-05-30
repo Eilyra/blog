@@ -4,6 +4,7 @@ categories:
 author: ellen
 title: Uu'nat progress
 date: 2019-05-30T17:09:28+03:00
+lastmod: 2019-05-30T23:59:28+03:00
 ---
 So [as noted]({{<relref "post/2019/tds.md">}}) we have been progressing on Uu'nat for a bit. This is still ongoing and I think I'm starting to get a good feel for all phases of the fight, phase three included.
 
@@ -30,7 +31,8 @@ In addition, phase three also has a new mechanic: [Insatiable Torment](https://w
 
 So phase three all in all is mostly familiar to someone who has played the other phases just with much more tight timings and less tolerance for failure. This does present something of a learning curve since you have to get used to knowing where to go beforehand so you'll be at the right place at the right time but I think we are slowly starting to get over this hurdle. I think our best try was 12% so far and we have had several phase three tries in the last few raid evenings so hopefully this means we can down the boss sometime this reset still---would actually mean we get a decent world ranking again as well, which would be nice. But I guess we'll know how that went in a week or so.
 
-
+---
+Well, that didn't last long. First kill was today.
 
 
 
