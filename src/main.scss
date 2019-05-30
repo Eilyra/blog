@@ -39,8 +39,8 @@ h3 {
 body {
   font-family: 'Helvetica Neue', 'Segoe UI', 'Segoe WP', Helvetica, Roboto, sans-serif;
   font-size: 16px;
-  color: #333333;
-  background-color: #fdfdfd;
+  color: #000000;
+  background: url(../images/bg1.jpg) 50% 0 #151921 repeat-x;
   line-height: 1.5;
   display: flex;
   flex-direction: column;
@@ -50,14 +50,110 @@ body {
   }
 }
 
+body > div {
+  width: auto;
+  min-height: 100vh;
+  margin: 0 auto;
+  background: url(../images/parchment-light2.jpg);
+  .site-header {
+    height: 200px;
+    background: url(../images/border2_red.gif) bottom repeat-x, url(../images/map_header.jpg) center no-repeat;
+    background-size: auto auto, 100% auto;
+    padding-bottom: 10px;
+    margin-bottom: 1.5em;
+    position: relative;
+    background-color: #333333;
+    .site-title {
+      font-size: 2em;
+      background: linear-gradient(90deg, #00000075 20%, transparent);
+      display: block;
+      position: absolute;
+      bottom: 10px;
+      left: 0;
+      padding: 0 0.5em;
+      color: #ffffff;
+      font-weight: 200;
+    }
+  }
+  main {
+    margin: 0 1.5em 3em;
+    .post-list {
+      article.post {
+        background: url(../images/parchment-light3.jpg);
+        border: 1px solid #545454;
+        margin-bottom: 2em;
+        .post-header {
+          text-align: left;
+          margin: 0;
+          margin-bottom: 1em;
+          h2 {
+            background: linear-gradient(180deg, #650000, #d24040 17%, #df0000 26%, #8c0200);
+            padding: 2px 10px;
+            margin: 0;
+            font-size: 15px;
+            line-height: 18px;
+            color: #ffffff;
+          }
+          a.post-link {
+            color: #ffffff;
+          }
+        }
+        .post-content {
+          margin: 1em;
+        }
+        .post-categories {
+          float: left;
+        }
+        .post-date {
+          float: right;
+        }
+      }
+    }
+    
+    article.post {
+      .post-header {
+        margin: 2em 0;
+        text-align: center;
+        a.post-link {
+          color: #333333;
+        }
+      }
+      ul, ol {
+        margin-left: 2em;
+      }
+    }
+  }
+  @media screen and (min-width: 800px) {
+    & {
+      width: 700px;
+      background-image: url(../images/border_left.gif), url(../images/border_right.gif), url(../images/parchment-light2.jpg);
+      background-repeat: repeat-y, repeat-y, repeat;
+      background-position: left, right, left;
+      padding: 0 29px;
+    }
+  }
+  @media screen and (min-width: 1000px) {
+    & {
+      width: 900px;
+    }
+  }
+  @media screen and (min-width: 1400px) {
+    & {
+      width: 1200px;
+    }
+  }
+}
+
+
+
 a {
-  color: rgb(42, 122, 226);
+  color: rgb(39, 110, 204);
   text-decoration: none;
   &:visited {
-    color: rgb(23, 86, 169);
+    color: rgb(21, 78, 153);
   }
   &:hover {
-    color: #333333;
+    color: rgb(7, 26, 51);
     text-decoration: underline;
   }
 }
@@ -74,20 +170,6 @@ blockquote {
   padding-left: 10px;
 }
 
-ul {
-  &.post-list {
-    list-style-type: none;
-    li {
-      margin-bottom: 15px;
-      margin-top: 15px;
-      .post-meta {
-        font-size: 0.9em;
-        color: #999;
-      }
-    }
-  }
-}
-
 hr {
   margin: 1em 0;
 }
@@ -98,70 +180,4 @@ figure {
   margin-right: auto;
 }
 
-div.wrapper {
-  margin: 0 0.5em;
-  width: auto;
-  @media (min-width: 50em) { width: 46em; margin: 0 auto; }
-}
 
-.site-header {
-  min-height: 56px;
-  line-height: 56px;
-  position: relative;
-  background-color: #333333;
-  .site-nav {
-    float: right;
-    vertical-align: center;
-    .menu-icon {
-      display: none;
-    }
-    .trigger {
-      overflow: none;
-    }
-  }
-
-  a.site-title, a.page-link {
-    color: #fdfdfd;
-    font-weight: 200;
-  }
-
-  .site-title {
-    font-size: 1.5em;
-  }
-
-  .page-link {
-    &:not(:first-child) {
-      margin-left: 20px;
-    }
-  }
-}
-
-.page-heading {
-  font-size: 1.5em;
-  margin: 0.5em 0;
-}
-
-.post-header {
-  margin: 2em 0;
-  text-align: center;
-  a.post-link {
-    color: #333333;
-  }
-  .post-meta {
-    color: #9f9f9f;
-  }
-}
-
-article.post {
-  ul, ol {
-    margin-left: 2em;
-  }
-}
-
-.site-footer {
-  min-height: 56px;
-  margin-top: 1em;
-  background: #333333;
-  color: #fdfdfd;
-  padding: 1em 0;
-}

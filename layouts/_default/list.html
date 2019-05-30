@@ -8,9 +8,10 @@
             <h2>
               <a class="post-link" href="{{ .Permalink }}">{{ .Title }}</a>
             </h2>
-            <p class="post-meta">{{ .Date.Format "Jan 2, 2006" }}{{ if .Params.categories }} &#x25CF; {{ delimit .Params.categories ", "}}{{ end }}</p>
+          
           </header>
           <section class="post-content">{{ .Summary }}{{ if .Truncated }} <a class="post-link" href="{{ .Permalink }}">Read more...</a>{{ end }}</section>
+        {{ if .Params.categories }}<div class="post-categories">{{ delimit .Params.categories ", "}}</div>{{ end }}<div class="post-date">{{ .Date.Format "Jan 2, 2006" }}</div>
         </article>
       {{ end }}
       </div>
