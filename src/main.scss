@@ -175,8 +175,10 @@ p {
 }
 
 blockquote {
-  border-left: solid 5px #e0e0e0;
-  padding-left: 10px;
+  border: 1px solid #545454;
+  background: url(../images/parchment-light3.jpg); 
+  margin: 1em; 
+  padding: 1em;
 }
 
 hr {
