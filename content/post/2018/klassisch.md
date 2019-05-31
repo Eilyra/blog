@@ -6,7 +6,7 @@ title: Classic servers
 date: 2018-02-12T18:21:54+02:00
 ---
 
-Classic servers were announced a long while ago at BlizzCon along with the Battle for Azeroth announcment. But I think that slowly my thoughts on them are starting to crystallize as someone who [played on a private Classic server]({{< relref "post/2015/vanilla.md" >}}).
+Classic servers were announced a long while ago at BlizzCon along with the Battle for Azeroth announcment. But I think that slowly my thoughts on them are starting to crystallize as someone who [played on a private Classic server]({{< relref "/post/2015/vanilla.md" >}}).
 
 > In the end I'll probably check Legion out as well, though as usual it'll probably be mostly to see the leveling experience and checking out the dungeons a few times. Sure, maybe I'll poke my head in to LFR as well, but eh, it doesn't really seem all that interesting. Might as well watch some of the livestreams for that. --<cite>Me, 2015</cite>
 

@@ -5,7 +5,7 @@ author: ellen
 title: Battle for Azeroth, part 2
 date: 2018-10-02T03:41:16+03:00
 ---
-Battle for Azeroth has now been out for a bit longer than [when I shared my first impressions of it]({{< relref "post/2018/bfa.md" >}}) and my feelings on the expansion have crystallized somewhat even though it is still early days and I won't know how it all turns out until the end of the expansion.
+Battle for Azeroth has now been out for a bit longer than [when I shared my first impressions of it]({{< relref "/post/2018/bfa.md" >}}) and my feelings on the expansion have crystallized somewhat even though it is still early days and I won't know how it all turns out until the end of the expansion.
 <!--more-->
 
 
@@ -17,7 +17,7 @@ As noted though, the fact that we are all still learning does mean that the rate
 
 ## Azerite gear
 
-Now azerite gear is a strange thing, [and I touched on my early impressions of it before]({{< relref "post/2018/bfa.md#azerite-armour" >}}). Going from Legion to Battle for Azeroth, we lost tier sets, our artifacts (with their relics) and the legendaries from Legion. All of these things provided different bonuses to our character that either made them play different or provided utility for certain situations---as a Priest, the cloak legendary for Holy stands out as an excellent example of extra raid utility that was very nice to have.
+Now azerite gear is a strange thing, [and I touched on my early impressions of it before]({{< relref "/post/2018/bfa.md#azerite-armour" >}}). Going from Legion to Battle for Azeroth, we lost tier sets, our artifacts (with their relics) and the legendaries from Legion. All of these things provided different bonuses to our character that either made them play different or provided utility for certain situations---as a Priest, the cloak legendary for Holy stands out as an excellent example of extra raid utility that was very nice to have.
 
 With Battle for Azeroth, all of these things in a way get rolled into a single system: Azerite Gear. Now for me, this system has a few flaws that stick out rather obviously:
 
@@ -57,4 +57,4 @@ Vectis I also found somewhat interesting---especially now that I can play Discip
 
 ## Discipline
 
-[Now I've briefly touched on this before]({{< relref "post/2018/heilig.md" >}}) but I've also really been enjoying Discipline. It plays a bit better in raids than in dungeons since you can better plan for cooldown usage with more predictable damage, but the spec in general plays quite good at the moment I feel and really fits my damage-happy playstyle as well. It wasn't unusual to see Smite as my most used spell even as Holy, so playing a spec where it actually contributes to my healing as well makes a lot of sense. As noted before as well, Holy just feels so slow with the changes in Battle for Azeroth that Discipline becomes a even more welcome change to me.
+[Now I've briefly touched on this before]({{< relref "/post/2018/heilig.md" >}}) but I've also really been enjoying Discipline. It plays a bit better in raids than in dungeons since you can better plan for cooldown usage with more predictable damage, but the spec in general plays quite good at the moment I feel and really fits my damage-happy playstyle as well. It wasn't unusual to see Smite as my most used spell even as Holy, so playing a spec where it actually contributes to my healing as well makes a lot of sense. As noted before as well, Holy just feels so slow with the changes in Battle for Azeroth that Discipline becomes a even more welcome change to me.

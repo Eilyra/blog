@@ -5,7 +5,7 @@ author: ellen
 title: Reputation
 date: 2018-08-21T23:12:33+03:00
 ---
-So I mentioned some of my [frustrations with reputation in Battle for Azeroth in my previous post]({{< relref "post/2018/bfa.md#reputation" >}}) and I think my feelings might've changed somewhat. This I think comes primarily from the vastly different nature of reputation in Battle for Azeroth compared to Legion.<!--more-->
+So I mentioned some of my [frustrations with reputation in Battle for Azeroth in my previous post]({{< relref "/post/2018/bfa.md#reputation" >}}) and I think my feelings might've changed somewhat. This I think comes primarily from the vastly different nature of reputation in Battle for Azeroth compared to Legion.<!--more-->
 
 Now, there is still a primary very important faction to get repuation with, this being the Honorboud for the Horde and Seventh Legion for the Alliance since these factions gate a dungeon behind them. What is significantly different from Legion however, is the pure amount of world quests available for these factions along with the speed one gets reputation. In Legion, getting the Suramar dungeons unlocked was something of a significant farm whereas in Battle for Azeroth, I only really started poking at the world quests on Thursday and was done by Sunday or Monday. This significant shortening of the farm naturally leads to it being much less annoying than it was in Legion. This also significantly helps because I think a big source of my frustration with this system came from the uncertainty of me being able to do the dungeon in a timely fashion[^1] and now once that stress has been lifted I am also less frustrated with the system itself.
 

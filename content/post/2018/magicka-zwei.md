@@ -6,7 +6,7 @@ title: Magicka 2
 date: 2018-03-23T22:59:50+02:00
 ---
 
-[Magicka is a good game]({{<relref "post/2018/magicka.md">}}). And so is Magicka 2.
+[Magicka is a good game]({{< relref "/post/2018/magicka.md" >}}). And so is Magicka 2.
 
 So I got the chance to play through Magicka 2 through as well and it quite enjoyable. At the start I was skeptical about some of the changes, for example the magicks now having a small cooldown for all of them---as in, you can't chain cast magicks as fast as you can tap them in. It is slightly alleviated by the new hotkey system, where you can bind four magicks to just a single key which then have their own cooldown and a smaller shared cooldown.
 

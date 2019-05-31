@@ -6,7 +6,7 @@ title: Uu'nat progress
 date: 2019-05-30T17:09:28+03:00
 lastmod: 2019-05-30T23:59:28+03:00
 ---
-So [as noted]({{<relref "post/2019/tds.md">}}) we have been progressing on Uu'nat for a bit. This is still ongoing and I think I'm starting to get a good feel for all phases of the fight, phase three included.
+So [as noted]({{< relref "/post/2019/tds.md">}}) we have been progressing on Uu'nat for a bit. This is still ongoing and I think I'm starting to get a good feel for all phases of the fight, phase three included.
 
 Now my observations on the second boss have changed somewhat. It seems that for melees the fight is mostly rather boring, since two of the primary mechanics of the fight---baiting the [Oblivion Tears](https://www.wowhead.com/spell=285185/oblivion-tear) to the edges of the room so that people don't run into them; not running into other players while [Unstable Resonance](https://www.wowhead.com/spell=293653/unstable-resonance) is active thus creating an explosion instantly killing players nearby while reaching your relic before the debuff runs out---don't target melee players unless there are too many of them or too many of the ranged and healers are dead.<!--more-->
 

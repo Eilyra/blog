@@ -6,7 +6,7 @@ title: Magicka
 date: 2018-03-16T16:27:56+02:00
 ---
 
-As [mentioned]({{<relref "post/2018/nichts-geht-ab.md">}}) I've been playing some Magicka recently and we finished the main campaign and one of the DLC campaigns: The Stars are Left.
+As [mentioned]({{< relref "/post/2018/nichts-geht-ab.md" >}}) I've been playing some Magicka recently and we finished the main campaign and one of the DLC campaigns: The Stars are Left.
 
 Now it has been a really fun time and I'll have to look into getting some of the other DLC campaigns, I believe there are still two or three to play along with Magicka 2 it seems, I wasn't even aware that there was a second installment of the game out so now I'm looking forward to getting the chance to play that and see what it's all about and what they've changed.
 
