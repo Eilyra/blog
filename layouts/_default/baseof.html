@@ -11,11 +11,10 @@
 	<meta name="flattr:id" content="glvjq0">
         
         <link rel="stylesheet" href="{{ "/css/main.css" | absURL }}">
-        <link rel="canonical" href="{{ .Page.URL | absURL }}">
-        {{ if .RSSLink}}
-        <link rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" href="{{ .RSSLink }}" />
-        <link rel="feed" type="application/rss+xml" title="{{ .Site.Title }}" href="{{ .RSSLink }}" />
-        {{ end }}
+        <link rel="canonical" href="{{ .Page.Permalink | absURL }}">
+        {{ with .OutputFormats.Get "rss" -}}
+        {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+        {{ end -}}
     </head>
       
 
