@@ -141,3 +141,8 @@ figure {
   border: 1px solid #545454; }
   figure img {
     max-width: 100%; }
+
+img.middle {
+  margin: 1em auto;
+  max-width: 100%;
+  display: block; }
