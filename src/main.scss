@@ -100,6 +100,12 @@ body > div {
         }
         .post-content {
           margin: 1em;
+          clear: both;
+          &:after {
+            clear: both;
+            content: "";
+            display: block;
+          }
         }
         .post-categories {
           float: left;
@@ -132,6 +138,16 @@ body > div {
       padding: 0 29px;
       .site-header {
         background-position: bottom, center top -137px;
+      }
+      img.left, img.right {
+        max-width: 50%;
+        display: inline-block;
+      }
+      img.left {
+        float: left;
+      }
+      img.right {
+        float: right;
       }
     }
   }
@@ -198,7 +214,7 @@ figure {
   }
 }
 
-img.middle {
+img.middle, img.right, img.left {
   margin: 1em auto;
   max-width: 100%;
   display: block;

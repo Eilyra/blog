@@ -76,7 +76,12 @@ body > div {
         body > div main .post-list article.post .post-header a.post-link {
           color: #ffffff; }
       body > div main .post-list article.post .post-content {
-        margin: 1em; }
+        margin: 1em;
+        clear: both; }
+        body > div main .post-list article.post .post-content:after {
+          clear: both;
+          content: "";
+          display: block; }
       body > div main .post-list article.post .post-categories {
         float: left; }
       body > div main .post-list article.post .post-date {
@@ -96,7 +101,14 @@ body > div {
       background-position: left, right, left;
       padding: 0 29px; }
       body > div .site-header {
-        background-position: bottom, center top -137px; } }
+        background-position: bottom, center top -137px; }
+      body > div img.left, body > div img.right {
+        max-width: 50%;
+        display: inline-block; }
+      body > div img.left {
+        float: left; }
+      body > div img.right {
+        float: right; } }
   @media screen and (min-width: 1000px) {
     body > div {
       width: 900px; }
@@ -142,7 +154,7 @@ figure {
   figure img {
     max-width: 100%; }
 
-img.middle {
+img.middle, img.right, img.left {
   margin: 1em auto;
   max-width: 100%;
   display: block; }
