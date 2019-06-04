@@ -56,6 +56,8 @@ body > div {
       padding: 0 0.5em;
       color: #ffffff;
       font-weight: 200; }
+      body > div .site-header .site-title:hover {
+        text-decoration: none; }
   body > div main {
     margin: 0 1.5em 3em; }
     body > div main .post-list article.post {

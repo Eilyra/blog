@@ -74,6 +74,9 @@ body > div {
       padding: 0 0.5em;
       color: #ffffff;
       font-weight: 200;
+      &:hover {
+        text-decoration: none;
+      }
     }
   }
   main {
