@@ -41,13 +41,24 @@ body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 16px;
   color: #000000;
-  background: url(../images/bg1.jpg) 50% 0 #151921 repeat-x;
+  background-color: #151921;
   line-height: 1.5;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
   > .wrapper {
     flex: 1;
+  }
+  @media screen and (min-width: $br-sm) {
+    background-image: url(../images/bg_links.jpg), url(../images/bg_rechts.jpg);
+    background-position: calc(50% - 879px) 0, calc(50% + 879px) 0;
+    background-repeat: no-repeat;
+  }
+  @media screen and (min-width: $br-me) {
+    background-position: calc(50% - 979px) 0, calc(50% + 979px) 0;
+  }
+  @media screen and (min-width: $br-lg) {
+    background-position: calc(50% - 1129px) 0, calc(50% + 1129px) 0;
   }
 }
 
