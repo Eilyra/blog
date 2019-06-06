@@ -1,7 +1,7 @@
 @charset "utf-8";
 // @import "syntax-highlighting";
 
-$br-sm: 768px;
+$br-sm: 800px;
 $br-me: 1000px;
 $br-lg: 1400px;
 
@@ -160,7 +160,7 @@ body > div {
       }
     }
   }
-  @media screen and (min-width: 800px) {
+  @media screen and (min-width: $br-sm) {
     & {
       width: 700px;
       background-image: url(../images/border_left.gif), url(../images/border_right.gif), url(../images/parchment-light2.jpg);
@@ -182,7 +182,7 @@ body > div {
       }
     }
   }
-  @media screen and (min-width: 1000px) {
+  @media screen and (min-width: $br-me) {
     & {
       width: 900px;
       .site-header {
@@ -190,7 +190,7 @@ body > div {
       }
     }
   }
-  @media screen and (min-width: 1400px) {
+  @media screen and (min-width: $br-lg) {
     & {
       width: 1200px;
       .site-header {
