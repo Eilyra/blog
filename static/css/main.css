@@ -58,6 +58,28 @@ body > div {
       font-weight: 200; }
       body > div .site-header .site-title:hover {
         text-decoration: none; }
+  body > div nav {
+    height: 25px;
+    margin: 1em 1.5em; }
+    body > div nav > a {
+      width: 195px;
+      height: 25px;
+      display: block;
+      background: url(../images/button1_bg.gif) no-repeat;
+      text-align: center;
+      font-size: 13px;
+      line-height: 25px;
+      color: #ffffff;
+      margin: 0 5px;
+      float: left; }
+      body > div nav > a:hover {
+        background-position: 0 -25px;
+        color: #ffffff;
+        text-decoration: none; }
+      body > div nav > a:visited {
+        color: #ffffff; }
+      body > div nav > a:first-child {
+        margin-left: 0; }
   body > div main {
     margin: 0 1.5em 3em; }
     body > div main .post-list article.post {

@@ -79,6 +79,33 @@ body > div {
       }
     }
   }
+  nav {
+    height: 25px;
+    margin: 1em 1.5em;
+    >a {
+      width: 195px;
+      height: 25px;
+      display: block;
+      background: url(../images/button1_bg.gif) no-repeat;
+      text-align: center;
+      font-size: 13px;
+      line-height: 25px;
+      color: #ffffff;
+      margin: 0 5px;
+      float: left;
+      &:hover {
+        background-position: 0 -25px;
+        color: #ffffff;
+        text-decoration: none;
+      }
+      &:visited {
+        color: #ffffff;
+      }
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+  }
   main {
     margin: 0 1.5em 3em;
     .post-list {
