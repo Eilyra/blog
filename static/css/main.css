@@ -25,13 +25,24 @@ body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 16px;
   color: #000000;
-  background: url(../images/bg1.jpg) 50% 0 #151921 repeat-x;
+  background-color: #151921;
   line-height: 1.5;
   display: flex;
   flex-direction: column;
   min-height: 100vh; }
   body > .wrapper {
     flex: 1; }
+  @media screen and (min-width: 800px) {
+    body {
+      background-image: url(../images/bg_links.jpg), url(../images/bg_rechts.jpg);
+      background-position: calc(50% - 879px) 0, calc(50% + 879px) 0;
+      background-repeat: no-repeat; } }
+  @media screen and (min-width: 1000px) {
+    body {
+      background-position: calc(50% - 979px) 0, calc(50% + 979px) 0; } }
+  @media screen and (min-width: 1400px) {
+    body {
+      background-position: calc(50% - 1129px) 0, calc(50% + 1129px) 0; } }
 
 body > div {
   width: 100%;
@@ -58,6 +69,28 @@ body > div {
       font-weight: 200; }
       body > div .site-header .site-title:hover {
         text-decoration: none; }
+  body > div nav {
+    height: 25px;
+    margin: 1em 1.5em; }
+    body > div nav > a {
+      width: 195px;
+      height: 25px;
+      display: block;
+      background: url(../images/button1_bg.gif) no-repeat;
+      text-align: center;
+      font-size: 13px;
+      line-height: 25px;
+      color: #ffffff;
+      margin: 0 5px;
+      float: left; }
+      body > div nav > a:hover {
+        background-position: 0 -25px;
+        color: #ffffff;
+        text-decoration: none; }
+      body > div nav > a:visited {
+        color: #ffffff; }
+      body > div nav > a:first-child {
+        margin-left: 0; }
   body > div main {
     margin: 0 1.5em 3em; }
     body > div main .post-list article.post {

@@ -1,7 +1,7 @@
 @charset "utf-8";
 // @import "syntax-highlighting";
 
-$br-sm: 768px;
+$br-sm: 800px;
 $br-me: 1000px;
 $br-lg: 1400px;
 
@@ -41,13 +41,24 @@ body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 16px;
   color: #000000;
-  background: url(../images/bg1.jpg) 50% 0 #151921 repeat-x;
+  background-color: #151921;
   line-height: 1.5;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
   > .wrapper {
     flex: 1;
+  }
+  @media screen and (min-width: $br-sm) {
+    background-image: url(../images/bg_links.jpg), url(../images/bg_rechts.jpg);
+    background-position: calc(50% - 879px) 0, calc(50% + 879px) 0;
+    background-repeat: no-repeat;
+  }
+  @media screen and (min-width: $br-me) {
+    background-position: calc(50% - 979px) 0, calc(50% + 979px) 0;
+  }
+  @media screen and (min-width: $br-lg) {
+    background-position: calc(50% - 1129px) 0, calc(50% + 1129px) 0;
   }
 }
 
@@ -76,6 +87,33 @@ body > div {
       font-weight: 200;
       &:hover {
         text-decoration: none;
+      }
+    }
+  }
+  nav {
+    height: 25px;
+    margin: 1em 1.5em;
+    >a {
+      width: 195px;
+      height: 25px;
+      display: block;
+      background: url(../images/button1_bg.gif) no-repeat;
+      text-align: center;
+      font-size: 13px;
+      line-height: 25px;
+      color: #ffffff;
+      margin: 0 5px;
+      float: left;
+      &:hover {
+        background-position: 0 -25px;
+        color: #ffffff;
+        text-decoration: none;
+      }
+      &:visited {
+        color: #ffffff;
+      }
+      &:first-child {
+        margin-left: 0;
       }
     }
   }
@@ -133,7 +171,7 @@ body > div {
       }
     }
   }
-  @media screen and (min-width: 800px) {
+  @media screen and (min-width: $br-sm) {
     & {
       width: 700px;
       background-image: url(../images/border_left.gif), url(../images/border_right.gif), url(../images/parchment-light2.jpg);
@@ -155,7 +193,7 @@ body > div {
       }
     }
   }
-  @media screen and (min-width: 1000px) {
+  @media screen and (min-width: $br-me) {
     & {
       width: 900px;
       .site-header {
@@ -163,7 +201,7 @@ body > div {
       }
     }
   }
-  @media screen and (min-width: 1400px) {
+  @media screen and (min-width: $br-lg) {
     & {
       width: 1200px;
       .site-header {
