@@ -2,9 +2,8 @@
 categories:
     - World of Warcraft
 author: ellen
-title: AP
+title: Azerite
 date: 2019-06-14T02:46:32+03:00
-draft: true
 ---
 AP, Artifact Power in Legion and Azerite Power were the new "infinite progression" mechanics introduced by Blizzard in order to keep different types of content rewarding for max level players. Now this worked very well in Legion---for me at least---since it was the first expansion in a long while that I played all the way through. Simply always having something available to strive for was a nice change of pace since it meant there was always a reason to log in---this was especially powerful in combination with mythic+ since this enabled me to do fun and engaging content while still working towards that goal of the next artifact level.
 
