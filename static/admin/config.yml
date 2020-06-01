@@ -10,7 +10,8 @@ collections:
     label: "Post"
     folder: "content/post"
     create: true
-    slug: "{{year}}/{{slug}}"
+    slug: "{{slug}}"
+    path: "{{year}}/{{slug}}"
     fields:
       - {label: "Categories", name: "categories", widget: "list", default: ["World of Warcraft"]}
       - {label: "Title", name: "title", widget: "string"}
