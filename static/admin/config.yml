@@ -17,7 +17,7 @@ collections:
     fields:
       - {label: "Categories", name: "categories", widget: "list", default: ["World of Warcraft"]}
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Author", name: "author", widget: "string", default: "ellen"}
+      - {label: "Author", name: "author", widget: "hidden", default: "ellen"}
       - {label: "Date", name: "date", widget: "datetime", format: "YYYY-MM-DDTHH:mm:ssZ"}
       - {label: "Draft", name: "draft", widget: "boolean", default: true}
       - {label: "Body", name: "body", widget: "markdown"}
