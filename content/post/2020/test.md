@@ -35,7 +35,7 @@ Well, that was annoying. So, upload seems to work in Edge but not Firefox. Also,
 
 Anyway, images:
 
-![alt](anubis_and_bastet_by_irenhorrors_dczmg0s-fullview.jpg "title")
+![alt](/images/uploads/brille.png "I wonder where this gets uploaded now?")
 
 Ok, that was strange, for some reason the image I uploaded earlier isn't showing up here in the media library now?
 
