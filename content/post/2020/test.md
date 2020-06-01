@@ -25,4 +25,16 @@ local welp = "Kind of what I expected"
 print(welp)
 ```
 
-I think the real question is how they get formatted on the Markdown side and then parsed by Hugo in my case. Oh, that was something I was considering, using something else than Hugo. Also, I wonder if there is a way to automatically populate the Author field? Seems a bit unecessary to work on the honor system, even if I am the only person using this system. Though to be fair, it does make guest posts easier... I guess that's something that is easily enough customisable?
+I think the real question is how they get formatted on the Markdown side and then parsed by Hugo in my case. Oh, that was something I was considering, using something else than Hugo. Also, I wonder if there is a way to automatically populate the Author field? Seems a bit unecessary to work on the honor system, even if I am the only person using this system. Though to be fair, it does make guest posts easier... I guess that's something that is easily enough customisable? Also, to be even more fair, the likelihood of there actually being guest posts on here is vanishingly small, so account for that is probably very unecessary at this point in time. Would even make the most sense to completely hide the author field and just prepopulate it as a hidden field so that I don't have to do that at some later point.
+
+But yes, my biggest annoyance at this point is just Mac+S not working for saving, Ctrl+S doesn't work either but not really expecting it to on a Mac. I guess I could try Ctrl+S on Windows buuut I'm doing most of my writing here so it doesn't matter as much if it works there and not here.
+
+That's actually a good point: how are images handled? OK, upload button is broken, does nothing? That's more than a tad annoying. Oh, maybe I haven't configured that? media_folder was configured, strange. Wait, maybe the folder needs to actually exist first? If that's the case, oh man...
+
+Well, that was annoying. So, upload seems to work in Edge but not Firefox. Also, logging in in Edge logged me out in Firefox which meant that I needed to copy over my changes in order to be able to save them. I mean, at the moment I mostly write in Edge anyway so only being able to upload images here is not really a biggie but it is still really strange and does count against this as my primary CMS. It could potentially be MacOS playing games though, with the permission system added in later versions, not sure.
+
+Anyway, images:
+
+![alt](anubis_and_bastet_by_irenhorrors_dczmg0s-fullview.jpg "title")
+
+Ok, that was strange, for some reason the image I uploaded earlier isn't showing up here in the media library now?
