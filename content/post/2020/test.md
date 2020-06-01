@@ -38,3 +38,5 @@ Anyway, images:
 ![alt](anubis_and_bastet_by_irenhorrors_dczmg0s-fullview.jpg "title")
 
 Ok, that was strange, for some reason the image I uploaded earlier isn't showing up here in the media library now?
+
+Wait what. Why did the image get uploaded to the content directory and no the static directory? This is all kinds of incorrect. Ok, I guess that comes from me using the collections.path configuration option, seems to not only change where the content file gets stored but also how other content gets linked to *sigh*. Solution found (I think), now we wait for the redeploy and then press publish again, which will hopefully fix this situation. Might have to include a new image, we'll see.
