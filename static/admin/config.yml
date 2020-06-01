@@ -12,6 +12,8 @@ collections:
     create: true
     slug: "{{slug}}"
     path: "{{year}}/{{slug}}"
+    media_folder: "{{media_folder}}"
+    public_folder: "{{public_folder}}"
     fields:
       - {label: "Categories", name: "categories", widget: "list", default: ["World of Warcraft"]}
       - {label: "Title", name: "title", widget: "string"}
