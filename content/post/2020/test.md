@@ -35,8 +35,10 @@ Well, that was annoying. So, upload seems to work in Edge but not Firefox. Also,
 
 Anyway, images:
 
-![alt](/images/uploads/brille.png "I wonder where this gets uploaded now?")
+![alt](/images/uploads/best-of-dschinghis-khan.jpg "I wonder where this gets uploaded now?")
 
 Ok, that was strange, for some reason the image I uploaded earlier isn't showing up here in the media library now?
 
-Wait what. Why did the image get uploaded to the content directory and no the static directory? This is all kinds of incorrect. Ok, I guess that comes from me using the collections.path configuration option, seems to not only change where the content file gets stored but also how other content gets linked to *sigh*. Solution found (I think), now we wait for the redeploy and then press publish again, which will hopefully fix this situation. Might have to include a new image, we'll see.
+Wait what. Why did the image get uploaded to the content directory and no the static directory? This is all kinds of incorrect. Ok, I guess that comes from me using the collections.path configuration option, seems to not only change where the content file gets stored but also how other content gets linked to *sigh*. Solution found (I think), now we wait for the redeploy and then press publish again, which will hopefully fix this situation. Might have to include a new image, we'll see. Ok, right, now it works as expected. That was a bit more work than I thought, but it all kind of makes sense in the end. It is a bit annoying though that I if I decide to use collections.path I *also* have to define collections.(media_folder,public_folder) in order to get the standard behaviour back there. Seems a tad unecessary.
+
+Oh, there's an idea actually, could make the uploads be by year. Though wait, that does then introduce the problem of trying to reference them correctly in the future, so probably not good.
