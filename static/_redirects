@@ -1,2 +1,0 @@
-/rss.xml /index.xml
-/:year/:month/:date/*.html /:year/:month/:date/:splat/
