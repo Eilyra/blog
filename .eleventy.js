@@ -20,16 +20,44 @@ module.exports = (conf) => {
     conf.addPassthroughCopy({ "src/static": "/" });
 
     conf.addCollection("posts", async (collection) => {
-        collection = await api.posts().embed().get();
+        let posts = await api.posts().embed();
+        let categories = await api.categories();
+        collection = [...posts]
+        while (posts._paging.links.next) {
+            posts = await posts._paging.next.get();
+            collection.push(...posts);
+        }
 
         collection.map(post => {
             post.content = post.content.rendered;
             post.title = post.title.rendered;
-            post.posted_at = new Date(post.date_gmt + "Z");
+            post.posted_at = new Intl.DateTimeFormat(
+                "en-US",
+                {
+                    year: "numeric",
+                    month: "long",
+                    day: "numeric",
+                    hour: "2-digit",
+                    minute: "2-digit",
+                    hour12: false
+                }).format(new Date(post.date_gmt + "Z"));
             post.author = post._embedded.author[0].name;
             post.link = replaceUrl(post.link);
+            post.categories = post.categories.map(category => {
+                let c = categories.filter(c => c.id == category)[0];
+                return { name: c.name, link: replaceUrl(c.link)};
+            });
+            post.category = post.categories[0];
         });
 
+        return collection;
+    });
+
+    conf.addCollection("categories", async collection => {
+        collection = await api.categories();
+        collection.map(category => {
+            category = { name: category.name, link: replaceUrl(category.link) };
+        });
         return collection;
     });
 

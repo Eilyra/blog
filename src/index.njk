@@ -15,7 +15,7 @@ pagination:
         
         </header>
         <section class="post-content">{{  post.content | safe }}</section>
-        <div class="post-categories">{{ post.category }}</div><div class="post-date">{{ post.posted_at }}</div>
+        <div class="post-categories"><a href="{{ post.category.link }}">{{ post.category.name }}</a></div><div class="post-date">{{ post.posted_at }}</div>
     </article>
     {% endfor %}
 </div>
