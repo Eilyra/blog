@@ -1,9 +1,0 @@
-<h1>Posts</h1>
-
-{% for post in wordpress %}
-<article>
-	<h2>{{ post.title.rendered }}</h2>
-	<span>{{ post._embed.author.name }}</span>
-	<section>{{ post.content.rendered }}</section>
-</article>
-{% endfor %}

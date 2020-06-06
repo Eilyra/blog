@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <title>{{ site.title }}</title>
+        {% if site.description %}
+        <meta name="description" content="{{ site.description }}">
+        {% endif %}
+	<meta name="flattr:id" content="glvjq0">
+        
+        <link rel="stylesheet" href="/css/style.css">
+        <link rel="canonical" href="{{ site.url }}">
+        <link rel="shortcut icon" href="/images/nelf-priest-avatar.gif" type="image/gif" />
+        <link rel="icon" href="/images/nelf-priest-avatar.gif" type="image/gif" />
+    
+    
+    </head>
+      
+
+  <body>
+    <div class="container">
+      <header class="site-header">
+          <a class="site-title" href="{{ site.url }}">{{ site.title }}</a>
+      </header>
+      <main>
+        {{ content | safe }}
+      </main>
+    </div>
+
+  </body>
+
+</html>

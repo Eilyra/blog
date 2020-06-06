@@ -1,0 +1,30 @@
+---
+layout: base
+pagination:
+    data: collections.posts
+    size: 5
+    alias: posts
+---
+<div class="post-list">
+    {% for post in posts %}
+    <article class="post">
+        <header class="post-header">
+        <h2>
+            <a class="post-link" href="{{ post.link }}">{{ post.title }}</a>
+        </h2>
+        
+        </header>
+        <section class="post-content">{{  post.content | safe }}</section>
+        <div class="post-categories">{{ post.category }}</div><div class="post-date">{{ post.posted_at }}</div>
+    </article>
+    {% endfor %}
+</div>
+<div class="pagination">
+    {% if pagination.href.previous %}
+    <a href="{{ pagination.href.previous }}" class="previous">Previous</a>
+    {% endif %}
+    <span class="page_number ">Page {{ pagination.pageNumber + 1 }} of {% if pagination.href.next %}<a href="{{ pagination.href.last }}">{{ pagination.pages.length }}</a>{% else %}{{ pagination.pages.length }}{% endif %}</span>
+    {% if pagination.href.next %}
+    <a href="{{ pagination.href.next }}" class="next">Next</a>
+    {% endif %}
+</div>
