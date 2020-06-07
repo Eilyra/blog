@@ -1,0 +1,15 @@
+[context.production]
+    command = "hugo"
+    publish = "public"
+
+[[redirects]]
+    from = "/xmlrpc.php"
+    to = "https://laatikot.faarao.net/xmlrpc.php"
+    status = 200
+    headers = {Host = "blog.faarao.net"}
+
+[[redirects]]
+    from = "/wp-json/*"
+    to = "https://laatikot.faarao.net/wp-json/:splat"
+    status = 200
+    headers = {Host = "blog.faarao.net"}
