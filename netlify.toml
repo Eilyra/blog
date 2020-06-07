@@ -1,5 +1,6 @@
 [context.production]
     command = "hugo"
+    publish = "public"
 
 [[redirects]]
     from = "/xmlrpc.php"
