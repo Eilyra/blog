@@ -1,0 +1,8 @@
+[context.production]
+    command = "hugo"
+
+[[redirects]]
+    from = "/xmlrpc.php"
+    to = "https://laatikot.faarao.net/xmlrpc.php"
+    status = 200
+    headers = {Host = "blog.faarao.net"}
