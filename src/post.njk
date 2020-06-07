@@ -1,10 +1,16 @@
----
-layout: base
-pagination:
-    data: collections.posts
-    size: 1
-    alias: post
-permalink: "{{ post.link }}"
+---js
+{
+  layout: "base",
+  pagination: {
+    data: "collections.posts",
+    size: 1,
+    alias: "post"
+  },
+  permalink: "{{ post.link }}",
+  eleventyComputed: {
+    title: data => data.post.title
+  }
+}
 ---
 <article class="post">
 
