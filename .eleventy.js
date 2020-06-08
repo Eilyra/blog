@@ -53,12 +53,45 @@ module.exports = (conf) => {
         return collection;
     });
 
-    conf.addCollection("categories", async collection => {
-        collection = await api.categories();
-        collection.map(category => {
-            category = { name: category.name, link: replaceUrl(category.link) };
+    conf.addCollection("categories", async () => {
+        let categories = await api.categories().get();
+        let postsCollector = await api.posts().perPage(100).embed();
+        const posts = [...postsCollector];
+
+        while (postsCollector._paging.links.next) {
+            postsCollector = await postsCollector._paging.next.get();
+            posts.push(...postsCollector);
+        }
+
+        categories.map(category => {
+            category.link = replaceUrl(category.link);
+            category.posts = posts.filter(post => {
+                return category.id === post.categories[0];
+            }).map(post => {
+                post.content = post.content.rendered;
+                post.title = post.title.rendered;
+                post.posted_at = new Intl.DateTimeFormat(
+                    "en-US",
+                    {
+                        year: "numeric",
+                        month: "long",
+                        day: "numeric",
+                        hour: "2-digit",
+                        minute: "2-digit",
+                        hour12: false
+                    }).format(new Date(post.date_gmt + "Z"));
+                post.author = post._embedded.author[0].name;
+                post.link = replaceUrl(post.link);
+                post.categories = post.categories.map(category => {
+                    let c = categories.filter(c => c.id == category)[0];
+                    return { name: c.name, link: replaceUrl(c.link)};
+                });
+                post.category = post.categories[0];
+                return post;
+            });
+            return category;
         });
-        return collection;
+        return categories;
     });
 
     return {
