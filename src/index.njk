@@ -5,18 +5,10 @@ pagination:
     size: 5
     alias: posts
 ---
+{% from "partials/card.njk" import card %}
 <div class="post-list">
     {% for post in posts %}
-    <article class="post">
-        <header class="post-header">
-        <h2>
-            <a class="post-link" href="{{ post.link }}">{{ post.title }}</a>
-        </h2>
-        
-        </header>
-        <section class="post-content">{{  post.content | safe }}</section>
-        <div class="post-categories"><a href="{{ post.category.link }}">{{ post.category.name }}</a></div><div class="post-date">{{ post.posted_at }}</div>
-    </article>
+    {{ card(post) }}
     {% endfor %}
 </div>
 <div class="pagination">
