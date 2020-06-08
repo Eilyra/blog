@@ -20,7 +20,7 @@ module.exports = (conf) => {
     conf.addPassthroughCopy({ "src/static": "/" });
 
     conf.addCollection("posts", async (collection) => {
-        let posts = await api.posts().embed();
+        let posts = await api.posts().perPage(100).embed();
         let categories = await api.categories();
         collection = [...posts]
         while (posts._paging.links.next) {
