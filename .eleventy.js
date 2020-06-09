@@ -34,6 +34,7 @@ module.exports = (conf) => {
             post.posted_at = new Intl.DateTimeFormat(
                 "en-US",
                 {
+                    timeZone: "Europe/Helsinki",
                     year: "numeric",
                     month: "long",
                     day: "numeric",
