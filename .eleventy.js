@@ -2,6 +2,7 @@ require("dotenv").config();
 const WPAPI = require("wpapi");
 const api = new WPAPI({ endpoint: process.env.WP_URL });
 const localImages = require("eleventy-plugin-local-images");
+const { JSDOM } = require('jsdom');
 
 const replaceUrl = url => {
     let re = new RegExp("https://[A-z0-9\\.]+", "i");
@@ -94,6 +95,23 @@ module.exports = (conf) => {
             return category;
         });
         return categories;
+    });
+
+    conf.addTransform('removesrcset', async (rawContent, outputPath) => {
+        let content = rawContent;
+
+        if (outputPath.endsWith('.html')) {
+            const dom = new JSDOM(content);
+            const images = [...dom.window.document.getElementsByTagName('img')];
+            if (images.length > 0) {
+                images.map(image => {
+                    image.removeAttribute("srcset");
+                    image.removeAttribute("sizes");
+                });
+                content = dom.serialize();
+            }
+        }
+        return content;
     });
 
     return {
