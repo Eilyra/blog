@@ -1,2 +1,4 @@
-/rss.xml /index.xml
+/rss.xml /feed.xml
+/index.xml /feed.xml
+/feed/ /feed.xml
 /:year/:month/:date/*.html /:year/:month/:date/:splat/

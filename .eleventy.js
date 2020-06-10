@@ -3,6 +3,7 @@ const WPAPI = require("wpapi");
 const api = new WPAPI({ endpoint: process.env.WP_URL });
 const localImages = require("eleventy-plugin-local-images");
 const { JSDOM } = require('jsdom');
+const pluginRss = require("@11ty/eleventy-plugin-rss");
 
 const replaceUrl = url => {
     let re = new RegExp("https://[A-z0-9\\.]+", "i");
@@ -17,6 +18,7 @@ module.exports = (conf) => {
         selector: "img",
         attribute: "src"
     });
+    conf.addPlugin(pluginRss);
     
     conf.addPassthroughCopy({ "src/static": "/" });
 
