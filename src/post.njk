@@ -1,0 +1,25 @@
+---js
+{
+  layout: "base",
+  pagination: {
+    data: "collections.posts",
+    size: 1,
+    alias: "post"
+  },
+  permalink: "{{ post.link }}",
+  eleventyComputed: {
+    title: data => data.post.title
+  }
+}
+---
+<article class="post">
+
+    <header class="post-header">
+      <h1 class="post-title">{{ post.title }}</h1>
+      <p class="post-meta">{{ post.posted_at }}</p>
+    </header>
+    <section class="post-content">
+    {{ post.content | safe }}
+    </section>
+  
+</article>

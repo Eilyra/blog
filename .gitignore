@@ -1,6 +1,6 @@
 public
+_site
+node_modules
 *.map
 .sass-cache
-node_modules
-_site
 .env

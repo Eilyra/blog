@@ -1,0 +1,22 @@
+---
+layout: base
+pagination:
+    data: collections.posts
+    size: 5
+    alias: posts
+---
+{% from "partials/card.njk" import card %}
+<div class="post-list">
+    {% for post in posts %}
+    {{ card(post) }}
+    {% endfor %}
+</div>
+<div class="pagination">
+    {% if pagination.href.previous %}
+    <a href="{{ pagination.href.previous }}" class="previous">Previous</a>
+    {% endif %}
+    <span class="page_number ">Page {{ pagination.pageNumber + 1 }} of {% if pagination.href.next %}<a href="{{ pagination.href.last }}">{{ pagination.pages.length }}</a>{% else %}{{ pagination.pages.length }}{% endif %}</span>
+    {% if pagination.href.next %}
+    <a href="{{ pagination.href.next }}" class="next">Next</a>
+    {% endif %}
+</div>
