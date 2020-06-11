@@ -10,7 +10,8 @@
   {% if site.tagline %}<subtitle>{{ site.description }}</subtitle>{% endif %}
   <link href="{{ site.url }}{{ page.permalink }}" rel="self"/>
   <link href="{{ site.url }}"/>
-  <updated>{{ collections.posts | rssLastUpdatedDate }}</updated>
+  {% set newestpost = collections.posts | first %}
+  <updated>{{ newestpost.date | rssDate }}</updated>
   <id>{{ site.url }}</id>
   {%- for post in collections.posts %}
   <entry>
