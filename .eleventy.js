@@ -34,7 +34,7 @@ module.exports = (conf) => {
         collection.map(post => {
             post.content = post.content.rendered;
             post.title = post.title.rendered;
-            post.date = new Date(post.date);
+            post.date = new Date(post.date_gmt + "Z");
             post.posted_at = new Intl.DateTimeFormat(
                 "en-US",
                 {
@@ -75,7 +75,7 @@ module.exports = (conf) => {
             }).map(post => {
                 post.content = post.content.rendered;
                 post.title = post.title.rendered;
-                post.date = new Date(post.date);
+                post.date = new Date(post.date_gmt + "Z");
                 post.posted_at = new Intl.DateTimeFormat(
                     "en-US",
                     {
