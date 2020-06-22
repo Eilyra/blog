@@ -9,3 +9,9 @@
     to = "https://laatikot.faarao.net/wp-json/:splat"
     status = 200
     headers = {Host = "blog.faarao.net"}
+
+[[redirects]]
+    from = "/wp-content/*"
+    to = "https://laatikot.faarao.net/wp-content/:splat"
+    status = 200
+    headers = {Host = "blog.faarao.net"}
