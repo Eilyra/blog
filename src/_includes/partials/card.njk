@@ -2,11 +2,11 @@
 <article class="post">
     <header class="post-header">
     <h2>
-        <a class="post-link" href="{{ post.link }}">{{ post.title | safe }}</a>
+        <a class="post-link" href="{{ post.url }}">{{ post.title | safe }}</a>
     </h2>
     
     </header>
-    <section class="post-content">{{  post.content | safe }}</section>
-    <div class="post-categories"><a href="{{ post.category.link }}">{{ post.category.name }}</a></div><div class="post-date">{{ post.posted_at }}</div>
+    <section class="post-content">{{  post.html | safe }}</section>
+    <div class="post-categories"><a href="{{ post.primary_tag.url }}">{{ post.primary_tag.name }}</a></div><div class="post-date">{{ post.published_at }}</div>
 </article>
 {% endmacro %}

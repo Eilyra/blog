@@ -19,7 +19,7 @@
     <link href="{{ site.url }}{{ post.link }}"/>
     <updated>{{ post.date | rssDate }}</updated>
     <id>{{ site.url }}{{ post.link }}</id>
-    <content type="html">{{ post.content | htmlToAbsoluteUrls(site.url + post.link) }}</content>
+    <content type="html">{{ post.html | htmlToAbsoluteUrls(site.url + post.link) }}</content>
   </entry>
   {%- endfor %}
 </feed>

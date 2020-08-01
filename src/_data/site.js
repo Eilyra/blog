@@ -1,11 +1,13 @@
 require("dotenv").config();
-const WPAPI = require("wpapi");
-const api = new WPAPI({
-    endpoint: process.env.WP_URL,
-    username: process.env.WP_USER,
-    password: process.env.WP_PASS
+const ghostContentAPI = require("@tryghost/content-api");
+const api = new ghostContentAPI({
+    url: process.env.GHOST_API_URL,
+    key: process.env.GHOST_CONTENT_API_KEY,
+    version: "v3"
 });
 
 module.exports = async () => {
-    return api.settings();
+    let settings = await api.settings.browse();
+    if (settings.url.endsWith('/')) settings.url = settings.url.substr(0, settings.url.length - 1);
+    return settings;
 };

@@ -15,6 +15,7 @@
     "eleventy-plugin-local-images": "^0.4.0"
   },
   "dependencies": {
+    "@tryghost/content-api": "^1.4.1",
     "wpapi": "^1.2.1"
   }
 }

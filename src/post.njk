@@ -6,7 +6,7 @@
     size: 1,
     alias: "post"
   },
-  permalink: "{{ post.link }}",
+  permalink: "{{ post.url }}",
   eleventyComputed: {
     title: data => data.post.title
   }
@@ -15,11 +15,15 @@
 <article class="post">
 
     <header class="post-header">
-      <h1 class="post-title">{{ post.title }}</h1>
-      <p class="post-meta">{{ post.posted_at }}</p>
+      <h1 class="post-title">{{ post.title | safe }}</h1>
+      <div class="post-meta">
+        <p>{{ post.published_at }}</p>
+        {% if post.primary_tag %}<p class="category">Posted in <a href="{{ post.primary_tag.url }}">{{ post.primary_tag.name }}</a></p>{% endif %}
+        {% if post.tags %}<p class="tags">{% for tag in post.tags %}{% if tag.slug != post.primary_tag.slug %}<a href="{{ tag.url }}">#{{ tag.name }}</a>{% endif %}{% endfor %}</p>{% endif %}
+      </div>
     </header>
     <section class="post-content">
-    {{ post.content | safe }}
+    {{ post.html | safe }}
     </section>
   
 </article>

@@ -1,41 +1,33 @@
 require("dotenv").config();
-const WPAPI = require("wpapi");
-const api = new WPAPI({ endpoint: process.env.WP_URL });
-const localImages = require("eleventy-plugin-local-images");
-const { JSDOM } = require('jsdom');
 const pluginRss = require("@11ty/eleventy-plugin-rss");
+const ghostContentAPI = require("@tryghost/content-api");
+const api = new ghostContentAPI({
+    url: process.env.GHOST_API_URL,
+    key: process.env.GHOST_CONTENT_API_KEY,
+    version: "v3"
+});
 
 const replaceUrl = url => {
-    let re = new RegExp("https://[A-z0-9\\.]+", "i");
-    let baseUrl = re.exec(process.env.WP_URL);
-    return url.replace(baseUrl[0], "");
+    return url.replace(process.env.GHOST_API_URL, "").replace(process.env.SITE_URL, "");
 }
 
 module.exports = (conf) => {
-    conf.addPlugin(localImages, {
-        distPath: "_site",
-        assetPath: "/static/images/uploads",
-        selector: "img",
-        attribute: "src"
-    });
     conf.addPlugin(pluginRss);
     
     conf.addPassthroughCopy({ "src/static": "/" });
 
     conf.addCollection("posts", async (collection) => {
-        let posts = await api.posts().perPage(100).embed();
-        let categories = await api.categories();
-        collection = [...posts]
-        while (posts._paging.links.next) {
-            posts = await posts._paging.next.get();
-            collection.push(...posts);
-        }
+        collection = await api.posts.browse({
+            include: "tags,authors",
+            limit: "all"
+        }).catch(err => {
+            console.error(err);
+        });
 
-        collection.map(post => {
-            post.content = post.content.rendered;
-            post.title = post.title.rendered;
-            post.date = new Date(post.date_gmt + "Z");
-            post.posted_at = new Intl.DateTimeFormat(
+        collection.forEach(post => {
+            post.date = post.published_at;
+            post.url = replaceUrl(post.url);
+            post.published_at = new Intl.DateTimeFormat(
                 "en-US",
                 {
                     timeZone: "Europe/Helsinki",
@@ -45,77 +37,38 @@ module.exports = (conf) => {
                     hour: "2-digit",
                     minute: "2-digit",
                     hour12: false
-                }).format(new Date(post.date_gmt + "Z"));
-            post.author = post._embedded.author[0].name;
-            post.link = replaceUrl(post.link);
-            post.categories = post.categories.map(category => {
-                let c = categories.filter(c => c.id == category)[0];
-                return { name: c.name, link: replaceUrl(c.link)};
-            });
-            post.category = post.categories[0];
+                }).format(new Date(post.published_at));
         });
 
         return collection;
     });
 
-    conf.addCollection("categories", async () => {
-        let categories = await api.categories().get();
-        let postsCollector = await api.posts().perPage(100).embed();
-        const posts = [...postsCollector];
-
-        while (postsCollector._paging.links.next) {
-            postsCollector = await postsCollector._paging.next.get();
-            posts.push(...postsCollector);
-        }
-
-        categories.map(category => {
-            category.link = replaceUrl(category.link);
-            category.posts = posts.filter(post => {
-                return category.id === post.categories[0];
-            }).map(post => {
-                post.content = post.content.rendered;
-                post.title = post.title.rendered;
-                post.date = new Date(post.date_gmt + "Z");
-                post.posted_at = new Intl.DateTimeFormat(
-                    "en-US",
-                    {
-                        timeZone: "Europe/Helsinki",
-                        year: "numeric",
-                        month: "long",
-                        day: "numeric",
-                        hour: "2-digit",
-                        minute: "2-digit",
-                        hour12: false
-                    }).format(new Date(post.date_gmt + "Z"));
-                post.author = post._embedded.author[0].name;
-                post.link = replaceUrl(post.link);
-                post.categories = post.categories.map(category => {
-                    let c = categories.filter(c => c.id == category)[0];
-                    return { name: c.name, link: replaceUrl(c.link)};
-                });
-                post.category = post.categories[0];
-                return post;
-            });
-            return category;
+    conf.addCollection("tags", async (collection) => {
+        collection = await api.tags.browse({
+            include: "count.posts",
+            limit: "all"
+        }).catch(err => {
+            console.error(err);
         });
-        return categories;
-    });
 
-    conf.addTransform('removesrcset', async (rawContent, outputPath) => {
-        let content = rawContent;
+        const posts = await api.posts.browse({
+            include: "tags,authors",
+            limit: "all"
+        }).catch(err => {
+            console.error(err);
+        });
 
-        if (outputPath.endsWith('.html')) {
-            const dom = new JSDOM(content);
-            const images = [...dom.window.document.getElementsByTagName('img')];
-            if (images.length > 0) {
-                images.map(image => {
-                    image.removeAttribute("srcset");
-                    image.removeAttribute("sizes");
-                });
-                content = dom.serialize();
-            }
-        }
-        return content;
+        collection.forEach(async tag => {
+            const taggedPosts = posts.filter(post => {
+                post.url = replaceUrl(post.url);
+                return post.primary_tag && post.primary_tag.slug === tag.slug;
+            });
+            if (taggedPosts.length) tag.posts = taggedPosts;
+
+            tag.url = replaceUrl(tag.url);
+        });
+
+        return collection;
     });
 
     return {
