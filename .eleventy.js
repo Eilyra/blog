@@ -10,6 +10,22 @@ const api = new ghostContentAPI({
 const replaceUrl = url => {
     return url.replace(process.env.GHOST_API_URL, "").replace(process.env.SITE_URL, "");
 }
+const fixPost = post => {
+    post.date = post.published_at;
+    post.url = replaceUrl(post.url);
+    if (post.primary_tag) post.primary_tag.url = replaceUrl(post.primary_tag.url);
+    post.published_at = new Intl.DateTimeFormat(
+        "en-US",
+        {
+            timeZone: "Europe/Helsinki",
+            year: "numeric",
+            month: "long",
+            day: "numeric",
+            hour: "2-digit",
+            minute: "2-digit",
+            hour12: false
+        }).format(new Date(post.published_at));
+}
 
 module.exports = (conf) => {
     conf.addPlugin(pluginRss);
@@ -24,21 +40,7 @@ module.exports = (conf) => {
             console.error(err);
         });
 
-        collection.forEach(post => {
-            post.date = post.published_at;
-            post.url = replaceUrl(post.url);
-            post.published_at = new Intl.DateTimeFormat(
-                "en-US",
-                {
-                    timeZone: "Europe/Helsinki",
-                    year: "numeric",
-                    month: "long",
-                    day: "numeric",
-                    hour: "2-digit",
-                    minute: "2-digit",
-                    hour12: false
-                }).format(new Date(post.published_at));
-        });
+        collection.forEach(fixPost);
 
         return collection;
     });
@@ -57,10 +59,10 @@ module.exports = (conf) => {
         }).catch(err => {
             console.error(err);
         });
+        posts.forEach(fixPost);
 
         collection.forEach(async tag => {
             const taggedPosts = posts.filter(post => {
-                post.url = replaceUrl(post.url);
                 return post.primary_tag && post.primary_tag.slug === tag.slug;
             });
             if (taggedPosts.length) tag.posts = taggedPosts;
