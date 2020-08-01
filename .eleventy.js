@@ -14,6 +14,11 @@ const fixPost = post => {
     post.date = post.published_at;
     post.url = replaceUrl(post.url);
     if (post.primary_tag) post.primary_tag.url = replaceUrl(post.primary_tag.url);
+    if (post.tags) {
+        post.tags.forEach(tag => {
+            tag.url = replaceUrl(tag.url);
+        });
+    }
     post.published_at = new Intl.DateTimeFormat(
         "en-US",
         {
