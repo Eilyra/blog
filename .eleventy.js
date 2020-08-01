@@ -18,6 +18,7 @@ const fixPost = post => {
         post.tags.forEach(tag => {
             tag.url = replaceUrl(tag.url);
         });
+        post.tags = post.tags.filter(tag => tag.slug != post.primary_tag.slug);
     }
     post.published_at = new Intl.DateTimeFormat(
         "en-US",

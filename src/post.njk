@@ -19,7 +19,7 @@
       <div class="post-meta">
         <p>{{ post.published_at }}</p>
         {% if post.primary_tag %}<p class="category">Posted in <a href="{{ post.primary_tag.url }}">{{ post.primary_tag.name }}</a></p>{% endif %}
-        {% if post.tags %}<p class="tags">{% for tag in post.tags %}{% if tag.slug != post.primary_tag.slug %}<a href="{{ tag.url }}">#{{ tag.name }}</a>{% endif %}{% endfor %}</p>{% endif %}
+        {% if post.tags %}<p class="tags">{% for tag in post.tags %}<a href="{{ tag.url }}">#{{ tag.name }}</a>{% if not loop.last %}, {% endif %}{% endfor %}</p>{% endif %}
       </div>
     </header>
     <section class="post-content">
