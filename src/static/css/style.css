@@ -309,6 +309,9 @@ figure.wp-block-image, div.wp-block-image {
 figure.wp-block-image img, div.wp-block-image img {
   max-width: 100%;
 }
+figure.wp-block-image .aligncenter, div.wp-block-image .aligncenter {
+  text-align: center;
+}
 
 img.middle, img.right, img.left {
   margin: 1em auto;
