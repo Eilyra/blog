@@ -11,7 +11,7 @@
 ---
 {% from "partials/card.njk" import card %}
 <h1>Posted in {{ tag.name }}</h1>
-<div class="post-list">
+<div class="post-list h-feed">
     {% for post in tag.posts %}
     {{ card(post) }}
     {% endfor %}

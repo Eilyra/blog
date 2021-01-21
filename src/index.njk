@@ -6,7 +6,7 @@ pagination:
     alias: posts
 ---
 {% from "partials/card.njk" import card %}
-<div class="post-list">
+<div class="post-list h-feed">
     {% for post in posts %}
     {{ card(post) }}
     {% endfor %}

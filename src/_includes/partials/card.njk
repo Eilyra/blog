@@ -1,12 +1,12 @@
 {% macro card(post) %}
-<article class="post">
+<article class="post h-entry">
     <header class="post-header">
     <h2>
-        <a class="post-link" href="{{ post.url }}" rel="bookmark">{{ post.title | safe }}</a>
+        <a class="post-link p-name" href="{{ post.url }}" rel="bookmark">{{ post.title | safe }}</a>
     </h2>
     
     </header>
-    <section class="post-content">{{  post.html | safe }}</section>
-    <div class="post-categories"><a href="{{ post.primary_tag.url }}">{{ post.primary_tag.name }}</a></div><div class="post-date">{{ post.published_at }}</div>
+    <section class="post-content e-content">{{  post.html | safe }}</section>
+    <div class="post-categories p-category"><a href="{{ post.primary_tag.url }}">{{ post.primary_tag.name }}</a></div><div class="post-date dt-published">{{ post.published_at }}</div>
 </article>
 {% endmacro %}
