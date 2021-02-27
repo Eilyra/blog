@@ -1,5 +1,4 @@
 [[redirects]]
     from = "/p/*"
-    to = "https://ghost.faarao.net/p/:splat"
+    to = "https://valkyrie.faarao.net/p/:splat"
     status = 200
-    headers = {Host = "blog.faarao.net"}
