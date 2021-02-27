@@ -2,3 +2,8 @@
     from = "/p/*"
     to = "https://valkyrie.faarao.net/p/:splat"
     status = 200
+
+[[redirects]]
+    from = "/assets/*"
+    to = "https://valkyrie.faarao.net/assets/:splat"
+    status = 200
