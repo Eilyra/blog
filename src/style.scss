@@ -86,14 +86,17 @@ body > div.container {
   margin: 0 auto;
   .site-header {
     position: relative;
+    color: #ffffff;
+    text-align: center;
+    padding: 2em 0;
     .site-title {
       font-size: 2em;
-      line-height: 5em;
-      letter-spacing: -0.05em;
+      letter-spacing: -0.025em;
       display: block;
       padding: 0 0.5em;
       color: #ffffff;
-      text-align: center;
+      width: max-content;
+      margin: 0 auto;
       &:hover {
         text-decoration: none;
       }
@@ -146,37 +149,27 @@ body > div.container {
     margin-bottom: 3em;
     .post-list {
       article.post {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto auto auto;
-        margin-bottom: 2em;
         .post-header {
-          grid-column: span 2;
-          text-align: left;
           a.post-link {
             text-decoration: none;
           }
         }
         .post-content {
-          grid-column: span 2;
-          margin-bottom: 1em;
           clear: both;
-          blockquote {
-          }
-        }
-        .post-categories {
-        }
-        .post-date {
-          text-align: right;
         }
       }
     }
     
     article.post {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto auto auto;
+      margin-bottom: 2em;
       background-color: #f0f0f0;
-      border-radius: 0.25em;
       padding-bottom: 2em;
       .post-header {
+        grid-column: span 2;
+        text-align: left;
         h1, h2 {
           margin: 0;
           line-height: 3em;
@@ -185,18 +178,12 @@ body > div.container {
           color: #333333;
         }
       }
-      .post-meta {
-        display: flex;
-        flex-wrap: wrap;
-        margin-bottom: 1.5em;
-        & > * {
-          flex: 1 max-content;
-          margin: 0;
-          padding-right: 1em;
-          &:last-child {
-            padding-right: 0;
-          }
-        }
+      .post-content {
+        grid-column: span 2;
+        margin-bottom: 1em;
+      }
+      .post-date, .dt-published {
+        text-align: right;
       }
       ul, ol {
         margin-left: 2em;
@@ -207,8 +194,8 @@ body > div.container {
       > img:first-child {
         width: 100%;
         margin: 0;
-        border-radius: 0.25em 0.25em 0 0;
         display: block;
+        grid-column: span 2;
       }
     }
 
@@ -259,6 +246,12 @@ body > div.container {
       }
       img.right {
         float: right;
+      }
+      article.post {
+        border-radius: 0.25em;
+        > img:first-child {
+          border-radius: 0.25em 0.25em 0 0;
+        }
       }
     }
   }
