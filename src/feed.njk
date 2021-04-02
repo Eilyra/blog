@@ -1,24 +1,24 @@
----json
+---js
 {
-  "permalink": "/feed.xml",
-  "eleventyExcludeFromCollections": true
+  permalink: "/feed.xml",
+  eleventyExcludeFromCollections: true
 }
 ---
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>{{ site.title }}</title>
   {% if site.tagline %}<subtitle>{{ site.description }}</subtitle>{% endif %}
-  <link href="{{ site.url }}{{ page.permalink }}" rel="self"/>
+  <link href="{{ site.url }}{{ permalink }}" rel="self"/>
   <link href="{{ site.url }}"/>
-  {% set newestpost = collections.posts | first %}
-  <updated>{{ newestpost.date | rssDate }}</updated>
+  {% set fp = collections.posts | first %}
+  <updated>{{ fp.date }}</updated>
   <id>{{ site.url }}</id>
   {%- for post in collections.posts %}
   <entry>
     <title>{{ post.title }}</title>
-    <link href="{{ site.url }}{{ post.link }}"/>
-    <updated>{{ post.date | rssDate }}</updated>
-    <id>{{ site.url }}{{ post.link }}</id>
+    <link href="{{ site.url }}{{ post.url }}"/>
+    <updated>{{ post.date }}</updated>
+    <id>{{ site.url }}{{ post.url }}</id>
     <content type="html">{{ post.html | htmlToAbsoluteUrls(site.url + post.link) }}</content>
   </entry>
   {%- endfor %}
