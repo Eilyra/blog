@@ -5,6 +5,9 @@ $br-sm: 800px;
 $br-me: 1000px;
 $br-lg: 1400px;
 
+$light-accent: #5e42a6;
+$dark-accent: #312450;
+
 %button {
   width: 195px;
   height: 25px;
@@ -59,7 +62,7 @@ h3 {
 body {
   // font-family: 'Helvetica Neue', 'Segoe UI', 'Segoe WP', Helvetica, Roboto, sans-serif;
   // font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-family: 'Source Code Pro', monospace;
+  font-family: sans-serif;
   font-size: 18px;
   color: #000000;
   background-color: #151921;
@@ -67,19 +70,13 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  background-color: $dark-accent;
+  background-image: linear-gradient(45deg, $dark-accent 50%, $light-accent);
+  background-size: 100vh 100vh;
+  background-repeat: no-repeat;
+  background-position: top 0 right 0;
   > .wrapper {
     flex: 1;
-  }
-  @media screen and (min-width: $br-sm) {
-    background-image: url(/images/bg_links.jpg), url(/images/bg_rechts.jpg);
-    background-position: calc(50% - 879px) 0, calc(50% + 879px) 0;
-    background-repeat: no-repeat;
-  }
-  @media screen and (min-width: $br-me) {
-    background-position: calc(50% - 979px) 0, calc(50% + 979px) 0;
-  }
-  @media screen and (min-width: $br-lg) {
-    background-position: calc(50% - 1129px) 0, calc(50% + 1129px) 0;
   }
 }
 
@@ -87,25 +84,19 @@ body > div.container {
   width: 100%;
   min-height: 100vh;
   margin: 0 auto;
-  background: url(/images/parchment-light2.jpg);
   .site-header {
-    height: 200px;
-    background: url(/images/border2_red.gif) bottom repeat-x, url(/images/map_header.jpg) center no-repeat;
-    background-size: auto auto, 100% auto;
-    padding-bottom: 10px;
-    margin-bottom: 1.5em;
     position: relative;
-    background-color: #151921;
+    color: #ffffff;
+    text-align: center;
+    padding: 2em 0;
     .site-title {
       font-size: 2em;
-      letter-spacing: -0.05em;
-      background: linear-gradient(90deg, #00000075 35%, transparent);
+      letter-spacing: -0.025em;
       display: block;
-      position: absolute;
-      bottom: 10px;
-      left: 0;
       padding: 0 0.5em;
       color: #ffffff;
+      width: max-content;
+      margin: 0 auto;
       &:hover {
         text-decoration: none;
       }
@@ -155,59 +146,56 @@ body > div.container {
     }
   }
   main {
-    margin: 0 1.5em 3em;
+    margin-bottom: 3em;
     .post-list {
       article.post {
-        background: url(/images/parchment-light.jpg);
-        border: 1px solid #545454;
-        margin-bottom: 2em;
         .post-header {
-          text-align: left;
-          margin: 0;
-          margin-bottom: 1em;
-          h2 {
-            background: linear-gradient(180deg, #650000, #d24040 17%, #df0000 26%, #8c0200);
-            padding: 0 0.5em;
-            margin: 0;
-            font-size: 1.2em;
-            line-height: 1.5em;
-            color: #ffffff;
-          }
           a.post-link {
-            color: #ffffff;
+            text-decoration: none;
           }
         }
         .post-content {
-          margin: 1em;
           clear: both;
-          &:after {
-            clear: both;
-            content: "";
-            display: block;
-          }
-          blockquote {
-            background: url(/images/parchment-light3.jpg);
-          }
-        }
-        .post-categories {
-          float: left;
-        }
-        .post-date {
-          float: right;
         }
       }
     }
     
     article.post {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto auto auto;
+      margin-bottom: 2em;
+      background-color: #f0f0f0;
+      padding-bottom: 2em;
       .post-header {
-        margin: 2em 0;
-        text-align: center;
+        grid-column: span 2;
+        text-align: left;
+        h1, h2 {
+          margin: 0;
+          line-height: 3em;
+        }
         a.post-link {
           color: #333333;
         }
       }
+      .post-content {
+        grid-column: span 2;
+        margin-bottom: 1em;
+      }
+      .post-date, .dt-published {
+        text-align: right;
+      }
       ul, ol {
         margin-left: 2em;
+      }
+      > * {
+        margin: 0 2em;
+      }
+      > img:first-child {
+        width: 100%;
+        margin: 0;
+        display: block;
+        grid-column: span 2;
       }
     }
 
@@ -245,9 +233,6 @@ body > div.container {
   @media screen and (min-width: $br-sm) {
     & {
       width: 700px;
-      background-image: url(/images/border_left.gif), url(/images/border_right.gif), url(/images/parchment-light2.jpg);
-      background-repeat: repeat-y, repeat-y, repeat;
-      background-position: left, right, left;
       padding: 0 29px;
       .site-header {
         background-position: bottom, center top -137px;
@@ -261,6 +246,12 @@ body > div.container {
       }
       img.right {
         float: right;
+      }
+      article.post {
+        border-radius: 0.25em;
+        > img:first-child {
+          border-radius: 0.25em 0.25em 0 0;
+        }
       }
     }
   }
@@ -282,19 +273,29 @@ body > div.container {
   }
 }
 
+.pagination {
+  color: #f0f0f0;
+  a, a:visited {
+    color: lighten($light-accent, 20%);
+  }
+}
+
 
 
 a {
   //color: rgb(39, 110, 204);
-  color: rgb(0, 0, 255);
+  //color: rgb(0, 0, 255);
+  color: $light-accent;
   text-decoration: none;
   &:visited {
     //color: rgb(21, 78, 153);
-    color: rgb(0, 0, 200);
+    //color: rgb(0, 0, 200);
+    color: $dark-accent;
   }
   &:hover {
     //color: rgb(7, 26, 51);
-    color: rgb(0, 0, 100);
+    //color: rgb(0, 0, 100);
+    color: $dark-accent;
     text-decoration: underline;
   }
 }
@@ -308,7 +309,7 @@ p {
 
 blockquote {
   border: 1px solid #545454;
-  background: url(/images/parchment-light.jpg); 
+  //background: url(/images/parchment-light.jpg); 
   margin: 1em; 
   padding: 1em;
 }
@@ -323,8 +324,6 @@ figure.wp-block-image, div.wp-block-image {
   margin-left: auto;
   margin-right: auto;
   padding: 0.5em;
-  /*background: url(/images/parchment-light.jpg);
-  border: 1px solid #545454;*/
   img {
     max-width: 100%;
   }

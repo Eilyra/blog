@@ -7,6 +7,6 @@
     
     </header>
     <section class="post-content e-content">{{  post.html | safe }}</section>
-    <div class="post-categories p-category"><a href="{{ post.primary_tag.url }}">{{ post.primary_tag.name }}</a></div><div class="post-date dt-published">{{ post.published_at }}</div>
+    <div class="post-categories p-category"><a href="{{ post.primary_tag.url }}">{{ post.primary_tag.name }}</a></div><time class="post-date dt-published" datetime="{{ post.date }}">{{ post.published_at }}</time>
 </article>
 {% endmacro %}
