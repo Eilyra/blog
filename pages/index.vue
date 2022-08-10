@@ -20,8 +20,8 @@ export default {
                 }]
         };
     },
-    async asyncData() {
-        const posts = await getPosts();
+    async asyncData({ payload }) {
+        const posts = payload ? payload : await getPosts();
         return { posts: posts };
     },
     components: { ArticleCard }

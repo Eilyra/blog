@@ -68,7 +68,14 @@ export default {
         };
       });
 
-      return [...post_routes, ...tag_routes];
+      return [
+        ...post_routes,
+        ...tag_routes,
+        {
+          route: '/',
+          payload: posts
+        }
+      ];
     }
   }
 }
