@@ -2,7 +2,7 @@ const ghostContentAPI = require("@tryghost/content-api");
 const api = new ghostContentAPI({
 	url: process.env.GHOST_API_URL,
 	key: process.env.GHOST_CONTENT_API_KEY,
-	version: "v3"
+	version: "v5.0"
 });
 
 const replaceUrl = url => {
