@@ -97,3 +97,7 @@ export async function getTag(slug) {
 
 	return tag;
 }
+
+export async function getSite() {
+	return await (await fetch(`${process.env.GHOST_API_URL}/ghost/api/admin/site`)).json();
+}
