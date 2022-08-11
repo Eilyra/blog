@@ -7,7 +7,6 @@
 </template>
 
 <script>
-import { getPosts } from '../api/ghost';
 import ArticleCard from '../components/ArticleCard.vue';
 
 export default {
@@ -21,8 +20,7 @@ export default {
 			};
 		},
 		async asyncData({ payload }) {
-			const posts = payload ? payload : await getPosts();
-			return { posts: posts };
+			return { posts: payload };
 		},
 		components: { ArticleCard }
 }
