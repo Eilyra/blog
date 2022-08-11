@@ -9,15 +9,6 @@ import { getPost } from '../api/ghost';
 import Article from '../components/Article.vue';
 
 export default {
-	name: "IndexPage",
-	head() {
-		return {
-			meta: [{
-					content: "Nuxt",
-					name: "generator"
-				}]
-		};
-	},
 	async asyncData({ route, payload }) {
 		const post = payload ? payload : await getPost(route.params.slug);
 		return { post: post };
