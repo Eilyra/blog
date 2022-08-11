@@ -52,6 +52,7 @@ export default {
   env: process.env,
 
   generate: {
+    dir: '_site',
     async routes() {
       const posts = await getPosts();
       const tags = await getTags();
