@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Rajdhani";
-  src: local("Rajdhani Regular"), local("RajdhaniRegular"), url("https://faarao.net/fonts/rajdhani/Rajdhani-Regular.ttf") format("ttf");
+  src: local("Rajdhani Regular"), local("RajdhaniRegular"), url("https://faarao.net/fonts/rajdhani/Rajdhani-Regular.ttf") format("truetype");
 }
 body, h1, h2, h3, h4, h5, h6,
 p, blockquote, pre, hr,
