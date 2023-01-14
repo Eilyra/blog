@@ -54,7 +54,7 @@ body > div.container .site-header {
   position: relative;
   text-align: center;
   padding: 2em 0;
-  color: #f3e600;
+  color: #f8ef00;
 }
 body > div.container .site-header .site-title {
   font-size: 2em;
@@ -95,7 +95,7 @@ body > div.container main article.post .post-content {
   margin-bottom: 1em;
 }
 body > div.container main article.post .post-footer {
-  color: #f3e600;
+  color: #f8ef00;
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
@@ -161,7 +161,7 @@ body > div.container main article.post > img:first-child {
 }
 
 a {
-  color: #72eaf8;
+  color: #00f0ff;
   text-decoration: none;
 }
 a:hover {
