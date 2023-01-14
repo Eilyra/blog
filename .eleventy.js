@@ -6,6 +6,7 @@ const api = new ghostContentAPI({
     key: process.env.GHOST_CONTENT_API_KEY,
     version: "v3"
 });
+const dayjs = require("dayjs");
 
 const replaceUrl = url => {
     return url.replace(process.env.GHOST_API_URL, "").replace(process.env.SITE_URL, "");
@@ -20,17 +21,7 @@ const fixPost = post => {
         });
         post.tags = post.tags.filter(tag => tag.slug != post.primary_tag.slug);
     }
-    post.published_at = new Intl.DateTimeFormat(
-        "en-US",
-        {
-            timeZone: "Europe/Helsinki",
-            year: "numeric",
-            month: "long",
-            day: "numeric",
-            hour: "2-digit",
-            minute: "2-digit",
-            hour12: false
-        }).format(new Date(post.published_at));
+    post.published_at = dayjs(post.published_at).format("YYYY.MM.DD.HH.mm");
 }
 
 module.exports = (conf) => {
