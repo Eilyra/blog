@@ -7,6 +7,10 @@ const api = new ghostContentAPI({
     version: "v3"
 });
 const dayjs = require("dayjs");
+const utc = require("dayjs/plugin/utc");
+const timezone = require("dayjs/plugin/timezone");
+dayjs.extend(utc);
+dayjs.extend(timezone);
 
 const replaceUrl = url => {
     return url.replace(process.env.GHOST_API_URL, "").replace(process.env.SITE_URL, "");
@@ -21,7 +25,7 @@ const fixPost = post => {
         });
         post.tags = post.tags.filter(tag => tag.slug != post.primary_tag.slug);
     }
-    post.published_at = dayjs(post.published_at).format("YYYY.MM.DD.HH.mm");
+    post.published_at = dayjs(post.published_at).tz("Europe/Helsinki").format("YYYY.MM.DD.HH.mm");
 }
 
 module.exports = (conf) => {
